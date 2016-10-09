@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tutoriels pour le mode aventure</title>
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!--[if lte IE 8]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('article');
+				document.createElement('section');
+				document.createElement('footer');
+			</script>
+		<![endif]-->
+		
+	</head>
+	<body>
+	
+	<!--Ici sera la bannière du site avec le menu principal-->
+		<header id="header">
+			<div>
+				<a href="index.html"><img src="image/min_logo.png" width="50" height="75" alt="Mon logo"></a>
+				<span id="image_fond"></span>
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="presentation.html">Présentation du jeu</a></li><li class="tutoriel">
+						<a href="Tutos.html" id="lien_spec">Tutoriaux</a>
+						<ul id="menu_deroul">
+							<li><a href="creation_monde.html">Création du monde</a></li>
+							<li><a href="Tuto_forteresse.html">Forteresse</a></li>
+							<li><a href="Tuto_aventure.html">Aventurier</a></li>
+							<li><a href="Tuto_legend.html">Légende</a></li>
+							<li><a href="FAQ.html">FAQ</a></li>
+						</ul>
+					</li><li><a href="histoires.html">Récits</a></li>
+					<li><a href="formulaire.html">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+	<!--Fin de la bannière-->	
+		
+	<!--Ce sera le gros bloc qui comportera le bloc de navigation et les articles-->	
+		<div id="main">
+		
+		<!--Le bloc de navigation à gauche-->
+			<nav id="nav">
+				<ul>
+					<li>Liens</li>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="presentation.html">Présentation du jeu</a></li>
+					<li class="tutoriel"><a href="Tutos.html">Tutoriaux</a></li>
+					<li><a href="histoires.html">Récits</a></li>
+					<li><a href="formulaire.html">Contact</a></li>
+					<li>Lien interne</li>
+					<li><a href="#aventure_choix_hero">Choix héro</a></li>
+					<li><a href="#aventure_attrib_hero">Attribut</a></li>
+					<li><a href="#aventurier_gameplay">Gameplay</a></li>
+					<li><a href="#aventurier_info">Obtenir infos</a></li>
+					<li><a href="#aventure_combat">Combattre ennemi</a></li>
+				</ul>
+			</nav>
+		<!--Fin du bloc de navigation-->
+			
+		<!--Ici sera le gros bloc qui contiendra les articles-->	
+			<div id="content">
+				<h1>Tutoriels pour le mode aventure</h1>
+				
+			<!--Intro-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo6.png" alt="" width="25px" height="25px">
+						<h2>Intro aux tutoriels</h2>
+					</header>
+					<p><a href="image/DF-present.png" target="blank"><img src="image/DF-present.png" width="150" height="150" alt="Photo d'article"></a>
+						Les tutos écrits ci-dessous seront courts. Le but est de faire une série de petits articles qui traiteront chacun d'un sujet en particulier.
+					</p>
+					<ul class="liste_image">
+						<li><a href="#aventure_choix_hero">Choix du héro</a></li>
+						<li><a href="#aventure_attrib_hero">Attribut du héro</a></li>
+						<li><a href="#aventurier_gameplay">Gameplay</a></li>
+						<li><a href="#aventurier_info">Obtenir des informations</a></li>
+						<li><a href="#aventure_combat">Combattre un ennemi</a></li>
+					</ul>
+				</article>
+			<!--Fin de l'intro-->
+				
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo2.png" alt="" width="25px" height="25px">
+						<h2 id="aventure_choix_hero">Choix du héro</h2>
+					</header>
+					<p><a href="image/choix_hero.png" target="blank"><img src="image/choix_hero.png" width="150" height="150" alt="Photo d'article"></a>
+						Quand nous démarrons une jeu en mode aventure, nous arrivons dans la page de choix du héros.
+					</p>
+					<p>
+						A gauche, vous verrez toute la liste des héros disponibles. Vous n'aurez pas de nom mais juste la race du héros et sa civilisation de départ.
+						A droite, vous verrez la zone qu'occupe la civilisation sur la carte.
+					</p>
+					<p>
+						Au milieu, vous verrez le "statut" du héro. Vous aurez trois choix: paysan, héro et demi-dieu.<br>
+						Les joueurs expérimentés prendront comme statut paysans, pour les débutant, demi-dieu conviendra mieux.
+					</p>
+					<p>
+						Comme race jouable, nous avons 3 race mais 4 type de héros: les <a href="#aventure_choix_hc">humains civilisés</a>, les <a href="#aventure_choix_he">humains extérieurs</a>,
+						les <a href="#aventure_choix_n">nains</a> et les <a href="#aventure_choix_elf">elfes</a>.<br>
+						Selon le héros que vous choisirez, votre équipement de départ sera différent.
+					</p>
+					<h4 id="aventure_choix_hc">Les humains civilisés</h4>
+					<p>
+						Cette classe de héros commence avec n'importe quelle armes de bronze/fer/argent.
+						Ils ont aussi un choix plus vaste de compétence de combat.
+						Ils peuvent utiliser n'importe quel objet vendu chez les marchands.<br>
+						Ils sont le meilleur choix pour un débutant.
+					</p>
+					<h4 id="aventure_choix_he">Les humains extérieurs</h4>
+					<p>
+						Ces humains commencent seulement avec les compétence "spear user" et "knife user" d'activée.
+						Ils ne pourront pas avoir "Armor user" et "shield user" d'activé et commencerons nu au début de l'aventure.
+					</p>
+					<h4 id="aventure_choix_n">Les nains</h4>
+					<p>
+						Les héros de cette race sont les seuls à commencer avec une arme en acier.<br>
+						Ils portent des armures et vêtements adaptés à leur taille et donc ne pourront pas utiliser toutes les armures.<br>
+						Ils sont les seuls héros qui sont capables d'entrer en transe martial s'ils sont environnés d'ennemis.
+					</p>
+					<h4 id="aventure_choix_elf">Les elfes</h4>
+					<p>
+						Ils commencent l'aventure avec des armes en bois. Ils ont beaucoup de limitation dans le choix des compétence militaire.<br>
+						Ils sont très rapides.<br>
+						Ils portent aussi des armures adapté à leur taille et donc ne pourront pas porter n'importe quel armure.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a></p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo8.png" alt="" width="25px" height="25px">
+						<h2 id="aventure_attrib_hero">Attribut du héro</h2>
+					</header>
+					<p><a href="image/attrib_aventure.png" target="blank"><img src="image/attrib_aventure.png" width="150" height="150" alt="Photo d'article"></a>
+						Après avoir choisi votre héros, vous arriverez dans un menu avec tous les attributs de votre nain.
+					</p>
+					<p>
+						Vous pouvez voir dans cette nouvelle page, deux colonne. Celle de gauche représente des qualités alors que celle de droite représente des compétences.
+					</p>
+					<p>
+						Tout comme le mode forteresse, nous aurons des points d'attribut.<br>
+						Mais contrairement à ce mode, les points des qualités sont indépendants des points de compétences.
+					</p>
+					<p>
+						Le nombre de points que vous pourrez attribuer au début de votre aventure dépendra du niveau du statut que vous aurez choisis.<br>
+						Ainsi, les paysans auront beaucoup moins de points que les demi-dieu (raison pour laquelle les demi-dieu sont meilleurs pour les débutants).<br>
+						15 points pour les qualités et 35 points de compétence pour le paysans.<br>
+						35 points pour les qualités et 95 points de compétence pour le héro.<br>
+						105 points pour les qualités et 161 point de compétence pour le demi-dieu.
+					</p>
+					<p>
+						Les qualités sont assez variées. Celles qui semblent importantes à faire monter sont les qualité: agility (agilité), toughness(endurcissement) et strenght (force).
+						Les qualités Endurance et will power (pouvoir de volonté) sont à augmenter.
+						La première permettra au héros de ne pas trop se fatiguer en combat alors que l'autre permettra au héros de résister plus efficacement à la douleur.
+					</p>
+					<p>
+						Pour les points compétences, nous avons pas mal de <a href="Tuto_forteresse.html#armee_attribut">compétences militaires</a> ainsi que d'autres compétences
+						moins utiles au combats mais utiles en d'autre situation.<br>
+						<strong>Swimmer :</strong> Permet au héro d'empêcher une mort par noyade.<br>
+						<strong>Ambusher :</strong> Permet au héro de se déplacer furtivement.<br>
+						<strong>Observer :</strong> Permet de repérer des unités invisibles. Ca permet notamment de ne pas tomber dans des embuscades.<br>
+						<strong>Thrower :</strong> Permet au héros de lancer n'importe quelle objet vers un ennemi.<br>
+						<strong>Knapper :</strong> Permet au héros de tailler des pierres pour les rendres plus dangereuses.<br>
+						<strong>Reader :</strong> Permet de lire des livres ou de lire des inscriptions.<br>
+					</p>
+					<p>
+						Après avoir choisi les qualités et compétences, vous pourrez choisir le sexe, le nom ainsi que le background de votre personnage.<br>
+						Avec la touche <span class="touche">"e"</span>, vous pouvez entrer le nom du héro.<br>
+						Avec <span class="touche">"c"</span>, modifiez le nom (ça donne un écran de sélection complet avec tous les mots du jeu).<br>
+						Avec <span class="touche">"r"</span>, le nom sera choisi aléatoirement.<br>
+						Avec <span class="touche">"g"</span>, changez le sexe du héro.<br>
+						Avec <span class="touche">"Enter"</span>, entrez dans l'aventure.
+						
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a></p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo4.png" alt="" width="25px" height="25px">
+						<h2 id="aventurier_gameplay">Gameplay</h2>
+					</header>
+					<p><a href="image/avent_game.png" target="blank"><img src="image/avent_game.png" width="150" height="150" alt="Photo d'article"></a>
+						Vous voici dans le mode aventurier mais que faire ?<br>
+						Nous allons apprendre les bases pour survivre.
+					</p>
+					<ul class="liste_image">
+						<li><a href="#aventur_gp_regard">Regarder autour de soi</a></li>
+						<li><a href="#aventur_gp_dial">Parler à d'autre personnages</a></li>
+						<li><a href="#aventur_gp_boisson">Boire et manger quelque chose</a></li>
+						<li><a href="#aventur_gp_prendre">Prendre un objet</a></li>
+						<li><a href="#aventur_gp_recrue">Recruter quelqu'un</a></li>
+						<li><a href="#aventur_gp_marche">Gérer sa vitesse de marche</a></li>
+						<li><a href="#aventur_gp_arbre">Grimper aux arbres</a></li>
+						<li><a href="#aventur_gp_lit">Dormir</a></li>
+						<li><a href="#aventur_gp_voyage">Voyager rapidement</a></li>
+						
+					</ul>
+					<h3 id="aventur_gp_regard">Regarder autour de soi</h3>
+					<p>
+						Appuyez sur la touche <span class="touche">"l"</span> pour regarder autour de vous.
+						Avec les touches <span class="touche">"&lt;"</span> et <span class="touche">"&gt;"</span> vous pouvez monter ou descendre votre regard pour observer d'autre niveau.
+					</p>
+					<h3 id="aventur_gp_dial">Parler à d'autre personnages</h3>
+					<p>
+						Pour parler à quelqu'un à quelqu'un, appuyez sur <span class="touche">"k"</span>.
+						Soit vous aurez des conversation en cours et vous pourrez les choisir dans une liste, soit vous n'en avez pas et
+						vous pourrez choisir avec qui vous voudrez en avoir en choisissant quelqu'un avec votre curseur.
+					</p>
+					<h3 id="aventur_gp_boisson">Boire et manger quelque chose</h3>
+					<p>
+						Pour manger quelque chose, vous devez avoir des provisions dans votre sac. Soit que vous les aurez acheté, soit vous serez partis à la chasse ou à la ceuillette.<br>
+						Pour boire, soit vous avez de l'eau dans votre sac, soit vous trouvez près d'une rivière ou sous la pluie (qui sont des sources illimité d'eau).
+						Si jamais vous êtes dans une zone froide et que vous vous retrouvez avec de la glace ou de la neige dans vos poche, vous pouvez les faire fondre sur un feu de camp.<br>
+						Pour cela appuyez sur <span class="touche">"I"</span> prés d'un feu de camps et choisissez l'objet à faire fondre, puis choisissez la lettre équivalente à l'option réchauffer l'objet en question.
+						et voilà, vous aurez dans votre inventaire de l'eau toute fraîche.<br>
+						Pour prendre de l'eau d'un puit, vous devez agir sur le puit en appuyant une première fois sur <span class="touche">"u"</span> pour mettre le seau dans le puit et une autre fois pour ramener le puit
+						rempli. Ensuite, appuyez sur <span class="touche">"I"</span> et choisissez votre gourde "Waterskin" dans la liste pour la remplir avec l'eau du puit.<br>
+						Vous pouvez faire pareil pour remplir votre gourde aux rivières si celles-ci ne sont pas gelée.
+						Pour boire ou manger, vous n'aurez qu'à appuyez sur la touche <span class="touche">"e"</span> et vous sélectionnerez dans la liste ce que vous voulez manger/boire.
+					</p>
+					<h3 id="aventur_gp_prendre">Prendre un objet</h3>
+					<p>
+						Pour prendre un objet et le mettre dans votre sac, vous devrez vous positionner au-dessus de l'objet en question et appuyer sur la touche <span class="touche">"g"</span>.<br>
+						Une liste de tout ce que vous pouvez prendre va s'ouvrir, vous n'aurez qu'à sélectionner ce que vous voulez prendre. (pour faire défiler la liste appuyez sur <span class="touche">"/"</span> ou <span class="touche">"*"</span>)<br>
+						N.B: C'est aussi avec la touche <span class="touche">"g"</span> que vous pourrez faire un feu de camp en choisissant le bon objet dans la liste "Make fire".
+					</p>
+					<h3 id="aventur_gp_recrue">Recruter quelqu'un</h3>
+					<p>
+						Pour recruter quelqu'un, vous devez entamer le dialogue avec lui.<br>
+						Choisissez dans la liste "Ask listener to join you" puis "Ask listener to join you on adventures".<br>
+						Ne vous attendez pas que beaucoup de personnes vous suivent. La plupart vous diront qu'elles ne veulent pas.<br>
+					</p>
+					<p>
+						Au début de votre aventure, vous ne pourrez recruter que 3 personnes mais au fur et à mesure, vous pourrez obtenir l'aide de plus de personne.
+					</p>
+					<h3 id="aventur_gp_marche">Gérer sa vitesse de marche</h3>
+					<p>
+						Il vous est possible de demander à votre nain de courir ou bien de marcher sur la pointe des pied en appuyant sur la touche <span class="touche">"S"</span>.<br>
+						Une liste va s'ouvrir avec toutes les vitesses de marche possible. (il y en a 6 en tout).
+					</p>
+					<p>
+						A droite, vous pouvez voir toutes les conditions qui peuvent jouer un rôle pendant que vous courez ou marchez prudemment.
+					</p>
+					<p>
+						Appuyez ensuite sur <span class="touche">"s"</span> pour passer en mode furtif ("sneaking").<br>
+						¨Pour validez appuyez sur "Enter"
+					</p>
+					<p>
+						Si vous appuyez sur <span class="touche">"s"</span> au lieu de <span class="touche">"S"</span>, vous passerez en mode couché ou mode mode debout selon le mode de déplacement où vous vous trouverez.<br>
+						Bien sûr, le mode couché est bien plus lent que le mode debout.
+					</p>
+					<h3 id="aventur_gp_arbre">Grimper aux arbres</h3>
+					<p>
+						L'action de grimper à un arbre en mode aventurier n'est apparue que très récemment dans le jeu.
+					</p>
+					<p>
+						Première chose pour grimper aux arbres, c'est d'avoir les mains libres. Il vous faut donc ranger l'arme que vous avez dans les mains avec la touche <span class="touche">"q"</span>.
+					</p>
+					<p>
+						Approchez vous ensuite du tronc d'un arbre et appuyez sur <span class="touche">"h"</span> pour vous agripper.<br>
+						Ensuite, vous pourrez vous déplacer dans l'arbre via les touches multidirectionnelle et les options que vous choisirez dans les menu qui s'afficheront.
+					</p>
+					<h3 id="aventur_gp_lit">Dormir</h3>
+					<p>
+						Pour dormir, vous devrez appuyez sur <span class="touche">"Z"</span>.<br>
+						Avec <span class="touche">"w"</span>, vous pouvez juste attendre alors qu'avec <span class="touche">"s"</span> vous pouvez dormir.
+					</p>
+					<p>
+						Avec <span class="touche">"+"</span> ou <span class="touche">"-"</span>, vous pouvez choisir la durée de votre sommeil.<br>
+						Avec <span class="touche">"d"</span>, vous pouvez choisir que cette durée va aller jusqu'à l'aube.
+					</p>
+					<p>
+						Attention, quand vous dormez, vous pouvez très bien être dérangé par quelque chose qui pourrait vous attaquer.
+					</p>
+					<h3 id="aventur_gp_voyage">Voyager rapidement</h3>
+					<p>
+						Voyagez rapidement avec la touche <span class="touche">"T"</span>.<br>
+						Vous ne voyagerez plus sur le terrain mais sur la carte.
+						De cette façon, vous pouvez parcourir de longue distance.
+					</p>
+					<p>
+						En haut, vous apercevrez une barre de couleur. Elle représentera le temps du jour en cours.<br>
+						Le temps peut passer très vite en mode voyage.
+					</p>
+					<p>
+						Quand vous arriverez prés d'un lieu important, la carte zoomera sur le lieu en question.
+					</p>
+					<p>
+						Avec <span class="touche">"m"</span>, vous afficherez la carte général du monde.
+					</p>
+					<p>
+						Pour sortir du mode voyage, appuyez sur <span class="touche">"d"</span>.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a> <a href="#aventurier_gameplay">Revenir au début de l'article</a></p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo11.png" alt="" width="25px" height="25px">
+						<h2 id="aventurier_info">Obtenir des informations</h2>
+					</header>
+					<p><a href="image/game_explo.png" target="blank"><img src="image/game_explo.png" width="150" height="150" alt="Photo d'article"></a>
+						Vous voici dans le mode aventurier mais que faire ?<br>
+						Nous allons apprendre les bases pour survivre.
+					</p>
+					<ul class="liste_image">
+						<li><a href="#aventurier_info_regard">Les Regarder autour de soi</a></li>
+						<li><a href="#aventurier_info_odeur">Les odeurs</a></li>
+						<li><a href="#aventurier_info_trace">Les traces de pas</a></li>
+						<li><a href="#aventurier_info_temperature">La température</a></li>
+						<li><a href="#aventurier_info_meteo">La météo</a></li>
+						<li><a href="#aventurier_info_date">La date</a></li>
+						<li><a href="#">Les informations du héro</a></li>
+						<li><a href="#aventurier_info_equipe">Notre équipe</a></li>
+					</ul>
+					<h3 id="aventurier_info_regard">Regarder autour de soi</h3>
+					<p>
+						Appuyez sur la touche <span class="touche">"l"</span> pour regarder autour de vous.
+						Avec les touches <span class="touche">"&gt;"</span> et <span class="touche">"&lt;"</span> vous pouvez monter ou descendre votre regard pour observer d'autre niveau.
+					</p>
+					<h3 id="aventurier_info_odeur">Les odeurs</h3>
+					<p>
+						Vous pouvez vous informer sur les odeurs environnantes.<br>
+						En appuyant sur <span class="touche">"o"</span>, un message s'affichera qui vous dira quelle sera l'odeur la plus forte.<br>
+						Appuyez sur <span class="touche">"O"</span>, vous permettra d'avoir tout le temps cette information d'affichée.
+					</p>
+					<h3 id="aventurier_info_trace">Les traces de pas</h3>
+					<p>
+						Avec <span class="touche">"K"</span>, vous pouvez afficher les traces de pas des créatures/personnes environnante ce qui vous permettra d'augmenter votre compétence "Tracker".<br>
+						Si vous appuyez sur <span class="touche">"Alt+K"</span>, vous ne verrez que les traces les plus fraîche.
+					</p>
+					<h3 id="aventurier_info_temperature">La température</h3>
+					<p>
+						Avec la touche "<span class="touche">P"</span>, vous pourrez afficher les information sur la température. Cela peut aller de "Hot" à "Freezing".
+					</p>
+					<h3 id="aventurier_info_meteo">La météo</h3>
+					<p>
+						Avec <span class="touche">"W"</span>, vous afficherez la météo environnante. <br>
+						Cette information n'est pas très importante.
+					</p>
+					<h3 id="aventurier_info_date">La date</h3>
+					<p>
+						<span class="touche">"D"</span> affichera la date du jour en cours. (jour, mois et année).
+					</p>
+					<h3 id="aventurier_info_hero">Les informations du héro</h3>
+					<p>
+						Pour afficher les informations de votre héro, appuyez sur <span class="touche">"z"</span>.<br>
+						Vous atteindrais la page de votre héros ou seront affichées vos compéténces ainsi que leur niveau respectif en plus de l'état des différentes parties de votre héros.
+						(Si vous voyez une partie rouge c'est qu'elle aura été blessée)<br>
+					</p>
+					<p>
+						Avec <span class="touche">"s"</span>, vous afficherez les qualité du héros ainsi que leur niveau.
+					</p>
+					<p>
+						Avec <span class="touche">"h"</span>, vous afficherez la santé du héro. Vous pourrez voir de quoi souffre le héros ains que ses différentes blessures.<br>
+						Pour sortir de la page de santé, vous n'aurez qu'à appuyer sur <span class="touche">"Esc"</span>.
+					</p>
+					<p>
+						Avec <span class="touche">"k"</span>, vous afficherez la liste des personnes/créatures/animaux que vous aurez tué ainsi que le lieux où ce meurtre a eu lieu.
+					</p>
+					<p>
+						Avec <span class="touche">"d"</span>, vous afficherez une description de votre héros.
+					</p>
+					<h3 id="aventurier_info_equipe">Notre équipe</h3>
+					<p>
+						Avec <span class="touche">"c"</span>, vous pourrez afficher tous vos compagnons. Pour en choisir un parmi la liste, appuyez sur la touche correspondante.
+					</p>
+					<p>
+						Vous arriverez sur la page du compagnon qui affiche l'équipement du personnage ainsi que les différentes parties de son corps (comme votre héros).
+					</p>
+					<p>
+						Avec <span class="touche">"d"</span>, vous afficherez une description du personnage.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a> <a href="#aventurier_info">Revenir au début de l'article</a></p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo3.png" alt="" width="25px" height="25px">
+						<h2 id="aventure_combat">Combattre un ennemi</h2>
+					</header>
+					<p><a href="image/bataille.png" target="blank"><img src="image/bataille.png" width="150" height="150" alt="Photo d'article"></a>
+						Pour combattre un ennemi, vous devez vous trouver assez proche de lui pour lui porter un coup.
+					</p>
+					<p>
+						Une fois très prés de votre ennemi, appuyez sur <span class="touche">"A"</span>.
+						Vous aurez le choix entre porter un coup ("strike"), lutter ("wrestle") et éviter un coup ("dodge").<br>
+						Des fois, les option "block" et "pary" pourront s'ajouter si votre ennemi vous attaque.
+					</p>
+					<h3>Porter un coup</h3>
+					<p>
+						Si vous choisissez de porter un coup, une nouvelle page s'ouvrira montrant les partie du corp de votre ennemi que vous voulez attaquer.<br>
+						Pour chacune des parties du corp, vous pourrez obtenir deux informations.<br>
+						La première c'est la facilité avec laquelle votre coup sera porté. Cela ira de easier à quite connect.<br>
+						La seconde sera la stabilité de votre position pendant l'attaque ou après l'attaque.
+					</p>
+					<p>
+						Une fois la partie du corp choisie, vous pouvez choisir avec quoi vous voulez l'attaquer et le style de l'attaque.
+					</p>
+					<p>
+						Vous pouvez l'attaquer avec votre arme, donner un coup avec votre bouclier, la tabasser avec vos poing, lui donner des coup de pied (action plus lente que les autres),
+						la griffer, la mordre.
+					</p>
+					<p>
+						Vous pouvez choisir de faire une attaque normale, rapide(plus rapide), puissante (plus lente), sauvage (plus rapide) ou précise (vraiment très lente)
+					</p>
+					<h3>Lutter avec l'ennemi</h3>
+					<p>
+						Si vous choisissez de lutter, vous pourrez choisir avec quelle partie de votre corps ou quelle arme vous voudrez saisir l'ennemi.<br>
+						Ensuite, vous devrez choisir quelle partie de votre ennemi saisir.
+						De cette façon-là, vous pourrez vous saisir de votre opposant.
+					</p>
+					<h3>Esquiver l'ennemi</h3>
+					<p>
+						Avec "dodge", vous pouvez éviter un coup. Vous devez choisir vers quelle zone éviter.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a></p>
+				</article>
+			<!--Fin de l'article-->
+				
+			</div>
+		<!--Fin du bloc avec les articles-->
+			
+		</div>
+	<!--Fin du gros bloc avec la naviqation et les articles-->
+		
+	<!--Le pied de page-->
+		<footer id="footer">
+			<div>
+				<p>
+					Ce site a été créé par <em>Stelio ALIFIERAKIS</em><br>
+					Bachelier en informatique réseau & systèmes, finalité réseaux & télécommunications<br>
+					Haute Ecole en Hainaut, Campus Technique
+				</p>
+			</div>
+		</footer>
+	<!--Fin du pied de page-->	
+		
+	</body>
+</html>

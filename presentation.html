@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Présentation du jeu</title>
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!--[if lte IE 8]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+				<script>
+					document.createElement('header');
+					document.createElement('nav');
+					document.createElement('article');
+					document.createElement('section');
+					document.createElement('footer');
+				</script>
+		<![endif]--> 
+		
+	</head>
+	<body>
+	<div id="principal">
+	
+	<!--Ici sera la bannière du site avec le menu principal-->
+		<header id="header">
+			<div>
+				<a href="index.html"><img src="image/min_logo.png" width="50" height="75" alt="Mon logo"></a>
+				<span id="image_fond"></span>
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+					<li><span>Présentation du jeu</span></li><li class="tutoriel">
+						<a href="Tutos.html" id="lien_spec">Tutoriaux</a>
+						<ul id="menu_deroul">
+							<li><a href="creation_monde.html">Création du monde</a></li>
+							<li><a href="Tuto_forteresse.html">Forteresse</a></li>
+							<li><a href="Tuto_aventure.html">Aventurier</a></li>
+							<li><a href="Tuto_legend.html">Légende</a></li>
+							<li><a href="FAQ.html">FAQ</a></li>
+						</ul>
+					</li><li><a href="histoires.html">Récits</a></li>
+					<li><a href="formulaire.html">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+	<!--Fin de la bannière-->
+		
+	<!--Ce sera le gros bloc qui comportera le bloc de navigation et les articles-->
+		<div id="main">
+		
+		<!--Le bloc de navigation à gauche-->
+			<nav id="nav">
+				<ul>
+					<li>Liens</li>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="presentation.html">Présentation du jeu</a></li>
+					<li class="tutoriel"><a href="Tutos.html">Tutoriaux</a></li>
+					<li><a href="histoires.html">Récits</a></li>
+					<li><a href="formulaire.html">Contact</a></li>
+					<li>Liens internes</li>
+					<li><a href="#historique">Historique</a></li>
+					<li><a href="#univers">Univers</a></li>
+					<li><a href="#graphisme">Graphismes</a></li>
+					<li><a href="#gameplay">Gameplay</a></li>
+					<li><a href="#telechargement">Téléchargement</a></li>
+				</ul>
+			</nav>
+		<!--Fin du bloc de navigation-->
+			
+		<!--Ici sera le gros bloc qui contiendra les articles-->
+			<div id="content">
+				<h1>Présentation du jeu</h1>
+				
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo10.png" alt="" width="25px" height="25px">
+						<h2>Introduction au jeu</h2>
+					</header>
+					<p><a href="image/DF-present.png" target="blank"><img src="image/DF-present.png" width="150" height="150" alt="Photo d'article"></a>
+						Ici, nous allons vous présenter le jeu.
+						Lors de notre présentation, nous essaierons de faire un tour d'horizon du jeu.
+						Nous essaierons de dégrossir le tout et vous donner envie de jouer à ce jeu qui mérite d'être connu.
+						Nous vous présenterons plusieurs point du jeu.
+						<ul class="liste_image">
+							<li><a href="#historique">Un petit historique du jeu</a></li>
+							<li><a href="#univers">L'univers du jeu</a></li>
+							<li><a href="#graphisme">Les graphismes</a></li>
+							<li><a href="#gameplay">Le gameplay</a></li>
+							<li><a href="#telechargement">Télécharger le jeu</a></li>
+						</ul>
+					</p>
+					<p>
+						Si vous ne connaissez pas le jeu et que vous voulez en connaître plus sur celui-ci, vous êtes tombés sur la bonne page.
+					</p>
+				</article>
+			<!--Fin de l'article-->
+				
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo3.png" alt="" width="25px" height="25px">
+						<h2 id="historique">Un petit historique du jeu</h2>
+					</header>
+					<p><a href="image/jeu_accueil.png" target="blank"><img src="image/jeu_accueil.png" width="150" height="150" alt="Photo d'article"></a>
+						Dwarf Fortress a été créé par Zach Adams sous le pseudo de ToadyOne et designé par Zach et Tarn Adams.
+						Le développement du jeu a été commencé en 2001 mais ce n'est qu'en 2006 que la première version fait son apparition.
+						Cette version 0.21.93.19a était pleine de bug a été trés vite suivie par d'autres versions corrigeant ces bugs.
+
+					</p>
+					<p class="text">
+						Par la suite, ce jeu a été en constante évolution et les versions se sont succédée aux versions.
+						En 2008, sort la première version pour Mac (nous en sommes alors à la version 0.27.176.38b)
+					</p>
+					<p class="text">
+						Un grand pas dans l'évolution du jeu se fera en 2010. En effet, après 1 ans et demi d'absence, une nouvelle version apparaît. Nous somme alors à la version 0.31.01.
+						Apportant son lot de nouveauté.
+					</p>
+					<p class="text">
+						Plus récemment, nous sommes passé en 2014 à la version 0.40.01 et la version actuelle au moment où cet article est écrit est la version 0.40.23.
+						Et il est très fort possible que la version que vous verriez soit différente de celle que j'ai vu aujourd'hui.
+					</p>
+					<p class="text">
+						Vous l'aurez compris, le jeu est toujours en développement et ce n'est pas prés de s'arrêter. L'auteur annonce que la version 1.0 ne devrait pas sortir avant 2025.
+						Mais que cela ne vous arrête pas à essayer de jouer au jeu car même si ce n'est pas la version finale, le jeu est déjà très riche et vaut la peine d'être vu.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a></p>
+				</article>
+			<!--Fin de l'article-->
+				
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo8.png" alt="" width="25px" height="25px">
+						<h2 id="univers">L'univers du jeu</h2>
+					</header>
+					<p><a href="image/univers.jpg" target="blank"><img src="image/univers.jpg" width="150" height="150" alt="Photo d'article"></a>
+						Dwarf Fortress prend place dans un monde Heroic-Fantasy fort inspiré du Seigneur des Anneaux et d'autres livres/films du genre.
+						Ainsi le monde dans lequel sera placé l'histoire sera peuplé de nain, d'elfe, d'homme et de gobelins qui seront les grands peuple qui peupleront la terre.
+						Ils seront accompagnés par beaucoup d'autres monstres et menaces qui jalloneront vos aventures.
+						Vous pourrez ainsi retrouver des trolls, des titans et toute sortes d'animaux géant.
+					</p>
+					<p class="text">
+						Le monde dans lequel vous serez propulsé ne sera pas uniforme et possédera pleins d'environnements différents.
+						Vous pourrez très bien passer votre temps dans des forêts ou traverser un désert, cela dans le mode aventure.
+						Même pour le mode forteresse, le terrain sera important car c'est ce qui permettra de savoir ce que vous pourrez réaliser.
+					</p>
+					<p class="text">
+						Enfin, signalons, que vous ne saurez jamais quel danger vous affronterez ni quel objets vous trouverez/fabriquerez.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a></p>
+				</article>
+			<!--Fin de l'article-->
+				
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo1.png" alt="" width="25px" height="25px">
+						<h2 id="graphisme">Les graphismes</h2>
+					</header>
+					<p><a href="image/meeting_hall.png" target="blank"><img src="image/meeting_hall.png" width="150" height="150" alt="Photo d'article"></a>
+						Parlons un peu des graphismes du jeu.
+					</p>
+					<p class="text">
+						Les graphismes du jeu sont très simplistes. En effet, le jeu se présente dans sa version originale en ASCII étendue.
+						Chaque symbole ASCII peuvent symboliser n'importe quoi. Tel symbole peut être un nain, ou un animal ou tout simplement une plante sur le chemin.
+					</p>
+					<p class="text">
+						Ce choix de design laisse la part belle à l'imagination mais malheureusement rend le jeu moins attirant et plus hermétiques aux néophytes qui tenteraient de se lancer dans le jeu.
+					</p>
+					<p class="text">
+						Notons quand même qu'il existe des mod capables de changer le graphisme du jeu et rendre le jeu plus compréhensible qu'il ne le serait sans ça.
+						Quoi que je ne crois pas qu'il y en ait déjà pour les versions les plus récentes étant donné le nombre de corrections qui sont apportées pour l'instant.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a></p>
+				</article>
+			<!--Fin de l'article-->
+				
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo11.png" alt="" width="25px" height="25px">
+						<h2 id="gameplay">Le gameplay</h2>
+					</header>
+					<p><a href="image/entrainement.png" target="blank"><img src="image/entrainement.png" width="150" height="150" alt="Photo d'article"></a>
+						Le gameplay de Dwarf Fortress est selon moi le plus gros point fort du jeu.
+					</p>
+					<p class="text">
+						Le jeu ne possède pas un mais plusieurs gameplay différent.
+						La façon dont vous jouerez dépendra du mode de jeu dans lequel vous êtes.
+						Dans DF, il existe 3 mode de jeu:
+					</p>
+						<ul class="liste_image">
+						<li>Le mode Forteresse</li>
+						<li>Le mode Aventure</li>
+						<li>Le mode Légende</li>
+						</ul>
+					<h3>Le mode Forteresse</h3>
+					<p class="text">
+						Le mode Forteresse sera la partie gestion du jeu.
+					</p>
+					<p class="text">
+						Au départ, vous aurez 7 nains dont vous pourrez choisir les métiers. Attention, vous devrez choisir judicieusement car
+						vous aurez un nombre limité de point que vous devrez répartir entre les différents nains. Vous pourrez faire pareil avec tous les objets que vous emportez.
+						Ainsi vous pouvez décider de dépenser des points dans la nourriture ou dans l'apport de bétail.
+					</p>
+					<p class="text">
+						Une fois le moment de préparation passé, vous arriverez dans la zone où vous aurez décidé de vous installer.
+						Le but sera de construire votre forteresse naine (d'où le titre du jeu) en donnant des ordres à vos nains. <br>
+						Au fur et à mesure que vous avancerez dans le temps, de nouveaux nains s'ajouteront au 7 initiaux.
+					</p>
+					<p class="text">
+						Vos actions seront variée. Vous pourrez creuser la roche à la recherche de matériaux mais aussi pour créer de nouvelle salle pour vos nains.
+						Vous pourrez bâtir des ateliers pour vos nains, cultiver des champs, créer votre propre armée lors des combats, ...
+					</p>
+					<p class="text">
+						Dans les tutoriaux que vous trouverez ici, nous vous aideront à réaliser les tâches de base qui vous permettront de survivre un maximum d'année.
+					</p>
+					<h3>Le mode Aventure</h3>
+					<p class="text">
+						Contrairement au mode forteresse où vous controlerez toute une ville de nain, dans ce mode, vous ne controlerez qu'un seul personnage.
+					</p>
+					<p class="text">
+						Vous ne serez pas obligé de contrôler un aventurier nain mais pourrez controler aussi bien un homme qu'un elfe.
+					</p>
+					<p class="text">
+						Avant de commencer, vous aurez, tout comme le mode forteresse, la possibilité de dépenser des points dans des capacités du héros.
+						Les points que vous pourrez dépenser dépendra du niveau de difficulté que vous aurez choisi. Il y en a trois:
+					</p>
+						<ul>
+							<li>Peasant</li>
+							<li>Hero</li>
+							<li>Demigod</li>
+						</ul>
+					<p>
+						Je conseille pour les débutant de choisir le mode demigod qui vous permettra de partir avec plus de points à dépenser et donc avoir des capacité meilleure.
+					</p>
+					<p class="text">
+						Une fois le jeu commencé, vous serez libre de faire ce que vous voulez. C'est vous qui choisirez ce que vous voulez faire et qui construirez l'histoire autour du héros.
+						Des quêtes vous seront proposé par les pnj auxquel vous parlerez mais, encore une fois, c'est vous qui choisirez si vous voulez les faire ou pas.
+					</p>
+					<p class="text">
+						Vous pourrez ainsi vivre des aventures héroïque où, ce qui est le plus probable pour les débutants, totalement foireuses.
+					</p>
+					<h3>Le mode Légende</h3>
+					<p class="text">
+						Le mode Légende de Dwarf Fortress contient tout simplement tout les faits d'armes, tous les évènements de tous les personnages de Dwarf Fortress.
+					</p>
+					<p class="text">
+						Il contient donc tout background de votre monde.
+					</p>
+					<p class="text">
+						Il peut être intéressant de consulter les légendes du monde pour comprendre comment telle ou telle situation a pu se produire.
+					</p>
+					<p class="text">
+						Nous espérons que la lecture de ces quelques lignes vous auront donné envie d'y jouer ou au moins de poursuivre la lecture des tutos.
+					</p>
+					<hr>
+					<p class="text">
+						Voilà, dans cette petite présentation du jeu, nous avons fait un petit tour d'horizon des différents modes de jeu de Dwarf Fortress.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a> <a href="#gameplay">Revenir au début de l'article</a></p>
+				</article>
+			<!--Fin de l'article-->
+				
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+						<img src="image/nain.png" alt="" width="25px" height="25px">
+						<h2 id="telechargement">Télécharger le jeu</h2>
+					</header>
+					<p><img src="image/telechargement.png" width="150" height="150" alt="Photo d'article">
+						Le jeu est gratuit. Vous ne devez pas payer pour télécharger le jeu.<br>
+						Le jeu est téléchargeable sur le site de l'éditeur.
+					</p>
+					<p>
+						Vous pouvez télécharger le jeu <a href="http://www.bay12games.com/dwarves/">ici</a>.
+						<br>
+						Il vous est même possibles de tester les anciennes versions <a href="http://www.bay12games.com/dwarves/older_versions.html">ici</a>.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a></p>
+				</article>
+			<!--Fin de l'article-->
+				
+			</div>
+		<!--Fin du bloc avec les articles-->
+			
+		</div>
+	<!--Fin du gros bloc avec la naviqation et les articles-->
+		
+	<!--Le pied de page-->
+		<footer id="footer">
+			<div>
+				<p>
+					Ce site a été créé par <em>Stelio ALIFIERAKIS</em><br>
+					Bachelier en informatique réseau & systèmes, finalité réseaux & télécommunications<br>
+					Haute Ecole en Hainaut, Campus Technique
+				</p>
+			</div>
+		</footer>
+	<!--Fin du pied de page-->
+	
+	</div>
+	</body>
+</html>

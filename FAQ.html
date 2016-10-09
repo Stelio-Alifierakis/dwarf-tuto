@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tutoriels pour le mode légende</title>
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!--[if lte IE 8]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+				<script>
+					document.createElement('header');
+					document.createElement('nav');
+					document.createElement('article');
+					document.createElement('section');
+					document.createElement('footer');
+				</script>
+		<![endif]--> 
+		
+	</head>
+	<body>
+	
+	<!--Ici sera la bannière du site avec le menu principal-->
+		<header id="header">
+			<div>
+				<a href="index.html"><img src="image/min_logo.png" width="50" height="75" alt="Mon logo"></a>
+				<span id="image_fond"></span>
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="presentation.html">Présentation du jeu</a></li><li class="tutoriel">
+						<a href="Tutos.html" id="lien_spec">Tutoriaux</a>
+						<ul id="menu_deroul">
+							<li><a href="creation_monde.html">Création du monde</a></li>
+							<li><a href="Tuto_forteresse.html">Forteresse</a></li>
+							<li><a href="Tuto_aventure.html">Aventurier</a></li>
+							<li><a href="Tuto_legend.html">Légende</a></li>
+							<li><a href="FAQ.html">FAQ</a></li>
+						</ul>
+					</li><li><a href="histoires.html">Récits</a></li>
+					<li><a href="formulaire.html">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+	<!--Fin de la bannière-->	
+		
+	<!--Ce sera le gros bloc qui comportera le bloc de navigation et les articles-->	
+		<div id="main">
+		
+		<!--Le bloc de navigation à gauche-->
+			<nav id="nav">
+				<ul>
+					<li>Liens</li>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="presentation.html">Présentation du jeu</a></li>
+					<li class="tutoriel"><a href="Tutos.html">Tutoriaux</a></li>
+					<li><a href="histoires.html">Récits</a></li>
+					<li><a href="formulaire.html">Contact</a></li>
+					<li>Liens internes</li>
+					<li><a href="#quest_gen">Questions gén.</a></li>
+					<li><a href="#quest_fortress">Question Fortress</a></li>
+					<li><a href="#quest_aventure">Question Aventure</a></li>
+					<li><a href="#quest_legend">Question Légende</a></li>
+				</ul>
+			</nav>
+		<!--Fin du bloc de navigation-->
+			
+		<!--Ici sera le gros bloc qui contiendra les articles-->	
+			<div id="content">
+				<h1>Foire Aux Questions</h1>
+			
+			<!--Intro-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo1.png" alt="" width="25px" height="25px">
+						<h2>Question par catégorie</h2>
+					</header>
+					<p><a href="image/DF-present.png" target="blank"><img src="image/DF-present.png" width="150" height="150" alt="Photo d'article"></a>
+						Voici les différentes questions qu'on peut se poser par catégories.
+					</p>
+					<ul class="liste_image">
+						<li><a href="#quest_gen">Questions générales sur le jeu</a></li>
+						<li><a href="#quest_fortress">Question sur le mode Dwarf Fortress</a></li>
+						<li><a href="#quest_aventure">Question sur le mode Aventure</a></li>
+						<li><a href="#quest_legend">Question sur le mode Légende</a></li>
+					</ul>
+				</article>
+			<!--Fin de l'intro-->
+			
+			<!--Début de l'article-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo2.png" alt="" width="25px" height="25px">
+						<h2 id="quest_gen">Question générale</h2>
+					</header>
+					<p><a href="image/jeu_accueil.png" target="blank"><img src="image/jeu_accueil.png" width="150" height="150" alt="Photo d'article"></a>
+						Voici les différentes questions générale qu'on peut se poser.
+					</p>
+					<ul class="liste_image">
+						<li>Quel est le but du jeu ?</li>
+						<li>Peut-on gagner dans le jeu ?</li>
+					</ul>
+					<h3>Quel est le but du jeu ?</h3>
+					<p>
+						Il n'y a pas vraiment de but dans le jeu.<br>
+						Le joueur est libre de faire ce qu'il veut que ce soit dans les modes <a href="Tuto_forteresse.html">Forteresse</a> ou <a href="Tuto_aventure.html">Aventure</a>.<br>
+						Il existe quand même une série d'objectifs à réaliser pour les deux modes.
+					</p>
+					<h4>Objectifs pour le mode Forteresse</h4>
+					<ul>
+						<li>Construire une base, avec de multiples pièces, fonctionnelle. </li>
+						<li>Fournir des vivres et de l'<a href="Tuto_forteresse.html#matiere_fini_alcool">alcool</a> (voire eau si pas d'alcool) à tous les nains. </li>
+						<li>Proposer quelques infrastructures de bases (chambres, salles à manger..) </li>
+						<li>Réaliser une défense minimale contre les envahisseurs. </li>
+						<li>Accumuler de la richesse. </li>
+						<li>Atteindre le maximum du nombre de nains</li>
+					</ul>
+					<h4>Objectifs pour le mode Aventure</h4>
+					<ul>
+						<li>Obtenir des vivres (chasse, ceuillette)</li>
+						<li><a href="Tuto_aventure.html#aventur_gp_recrue">Recruter des compagnons</a></li>
+						<li>Accomplir des quêtes (tuer des monstres ou des bandits)</li>
+					</ul>
+					<h3>Peut-on gagner dans le jeu ?</h3>
+					<p>
+						Non, nous ne pouvons pas gagner dans ce jeu. Il n'existe aucune condition de victoire par contre il existe des conditions de défaite.<br>
+						De fait, nous ne pouvons que perdre dans ce jeu. Mais n'oubliez pas, "Loosing is fun".
+					</p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Début de l'article-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo3.png" alt="" width="25px" height="25px">
+						<h2 id="quest_fortress">Question sur le mode Dwarf Fortress</h2>
+					</header>
+					<p><a href="image/puit.png" target="blank"><img src="image/puit.png" width="150" height="150" alt="Photo d'article"></a>
+						Voici les différentes questions qu'on peut se poser pour le mode <a href="Tuto_forteresse.html">Forteresse</a>.
+					</p>
+					<ul class="liste_image">
+						<li>Comment survivre à l'hiver ?</li>
+						<li>Comment construire ma forteresse ?</li>
+						<li>Comment donner des ordres à mes nains ?</li>
+						<li>Comment <a href="Tuto_forteresse.html#besoin_agri">créer des champs</a> ?</li>
+						<li>Je n'arrive pas à placer un lit/chaise/porte, comment puis-je faire ?</li>
+					</ul>
+					<h3>Comment survivre à l'hiver ?</h3>
+					<p>
+						Pour survivre à l'hiver, vous avez besoin de trouver des sources de nourritures et de <a href="Tuto_forteresse.html#besoin_boisson">trouver de quoi boire</a>.
+						Si vous arrivez à survivre au premier hiver, vous survivrez au suivant.
+						Pour cela, n'hésitez pas à prendre avec vous plus de boissons et de nourritures pendant la préparation de votre voyage.
+					</p>
+					<p>
+						Ensuite, pendant votre première année, essayez d'engranger le maximum de nourriture par tous les moyens possibles.
+					</p>
+					<p>
+						Enfin, essayer de <a href="Tuto_forteresse.html#besoin_biere">distiller le maximum d'alcool</a> et créez un puit à l'intérieur de votre forteresse.
+						(Avoir un aquifère peut vous aider fortement dans la création du puit, sinon il vous faudra creuser vous même votre réservoir d'eau en-dessous du puit)
+					</p>
+					<h3>Comment construire ma forteresse ?</h3>
+					<p>
+						Pour construire votre forteresse, vous aurez besoin de <a href="Tuto_forteresse.html#creuser">creuser vos murs</a> avec vos mineurs.
+						Vous pouvez aussi décider de construire des pièces avec les matériaux que vous aurez amassés.
+					</p>
+					<h3>Comment donner des ordres à mes nains ?</h3>
+					<p>
+						Donner des ordres se fera dans le menu designation pour ce qui est de creuser, ramasser des plantes, couper des arbres.
+						Mais pour ce qui est de la création d'objet, les ordres se feront depuis les <a href="Tuto_forteresse.html#prod_etablis">ateliers</a>.
+					</p>
+					<h3>Comment créer des champs ?</h3>
+					<p>
+						Nous vous invitons à lire le tutoriel consacré au <a href="Tuto_forteresse.html#besoin_agri">champ</a>.
+					</p>
+					<h3>Je n'arrive pas à placer un lit/chaise/porte, comment puis-je faire ?</h3>
+					<p>
+						Pour placer un objet, vous devrez l'avoir en magasin. Soit vous l'aurez construit dans l'un de vos atelier soit vous l'aurez acheté.
+						Une fois l'objet construit, vous n'aurez qu'à le sélectionner dans le menu objet et à le placer.
+					</p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Début de l'article-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo4.png" alt="" width="25px" height="25px">
+						<h2 id="quest_aventure">Question sur le mode Aventure</h2>
+					</header>
+					<p><a href="image/bataille.png" target="blank"><img src="image/bataille.png" width="150" height="150" alt="Photo d'article"></a>
+						Voici les différentes questions qu'on peut sur le mode <a href="Tuto_aventure.html">aventure</a>.
+					</p>
+					<ul class="liste_image">
+						<li>Comment recruter quelqu'un ?</li>
+						<li>Comment puis-je <a href="Tuto_aventure.html#aventure_combat">me battre contre quelqu'un</a> ?</li>
+						<li>Comment puis-je me procurer de la nourriture ?</li>
+						<li>Comment puis-je trouver à boire ?</li>
+						<li>Comment puis-je trouver des quêtes ?</li>
+					</ul>
+					<h3>Comment recruter quelqu'un ?</h3>
+					<p>
+						Pour <a href="Tuto_aventure.html#aventur_gp_recrue">recruter quelqu'un</a>, il suffit de lui demander.
+						Regardez l'option "Ask to join to you" dans les choix de dialogue.
+					</p>
+					<h3>Comment puis-je me procurer de la nourriture ?</h3>
+					<p>
+						La chasse et la cueillette sont de bon moyens de se procurer de la nourriture.
+					</p>
+					<h3>Comment puis-je trouver à boire ?</h3>
+					<p>
+						Les rivières vous donneront de bonnes ressources d'eau. N'oubliez pas de remplir votre gourde d'eau.
+						Vous pouvez voir dans le tuto comment faire l'hiver quand les rivières sont gelées.
+					</p>
+					<h3>Comment puis-je trouver des quêtes ?</h3>
+					<p>
+						Parlez aux gens et demandez leur quels sont les troubles dans la région. Il vous indiqueront les problèmes qu'ils ont.
+					</p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Début de l'article-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo5.png" alt="" width="25px" height="25px">
+						<h2 id="quest_legend">Question sur le mode Légende</h2>
+					</header>
+					<p><a href="image/carte_historique.png" target="blank"><img src="image/carte_historique.png" width="150" height="150" alt="Photo d'article"></a>
+						Voici les différentes questions qu'on peut se poser sur le mode <a href="Tuto_legend.html">légende</a>.
+					</p>
+					<ul class="liste_image">
+						<li>Comment puis-je voir l'histoire d'un nain en particulier ?</li>
+						<li>Comment puis-je voir l'histoire du monde ?</li>
+					</ul>
+					<h3>Comment puis-je voir l'histoire d'un nain en particulier ?</h3>
+					<p>
+						Il vous suffit de regarder dans la liste des <a href="Tuto_legend.html#perso_historique">"Historical Figures"</a>.
+					</p>
+					<h3>Comment puis-je voir l'histoire du monde ?</h3>
+					<p>
+						Il vous suffit de regarder dans <a href="Tuto_legend.html#legend_age_monde">Age du monde</a>.
+					</p>
+				</article>
+			<!--Fin de l'article-->
+			
+			</div>
+		</div>
+	<!--Fin du gros bloc avec la naviqation et les articles-->
+		
+	<!--Le pied de page-->
+		<footer id="footer">
+			<div>
+				<p>
+					Ce site a été créé par <em>Stelio ALIFIERAKIS</em><br>
+					Bachelier en informatique réseau & systèmes, finalité réseaux & télécommunications<br>
+					Haute Ecole en Hainaut, Campus Technique
+				</p>
+			</div>
+		</footer>
+	<!--Fin du pied de page-->	
+		
+	</body>
+</html>

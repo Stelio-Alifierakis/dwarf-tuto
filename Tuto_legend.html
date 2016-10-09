@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tutoriels pour le mode légende</title>
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!--[if lte IE 8]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('article');
+				document.createElement('section');
+				document.createElement('footer');
+			</script>
+		<![endif]-->
+		
+	</head>
+	<body>
+	
+	<!--Ici sera la bannière du site avec le menu principal-->
+		<header id="header">
+			<div>
+				<a href="index.html"><img src="image/min_logo.png" width="50" height="75" alt="Mon logo"></a>
+				<span id="image_fond"></span>
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="presentation.html">Présentation du jeu</a></li><li class="tutoriel">
+						<a href="Tutos.html" id="lien_spec">Tutoriaux</a>
+						<ul id="menu_deroul">
+							<li><a href="creation_monde.html">Création du monde</a></li>
+							<li><a href="Tuto_forteresse.html">Forteresse</a></li>
+							<li><a href="Tuto_aventure.html">Aventurier</a></li>
+							<li><a href="Tuto_legend.html">Légende</a></li>
+							<li><a href="FAQ.html">FAQ</a></li>
+						</ul>
+					</li><li><a href="histoires.html">Récits</a></li>
+					<li><a href="formulaire.html">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+	<!--Fin de la bannière-->	
+		
+	<!--Ce sera le gros bloc qui comportera le bloc de navigation et les articles-->	
+		<div id="main">
+		
+		<!--Le bloc de navigation à gauche-->
+			<nav id="nav">
+				<ul>	
+						<li>Liens</li>
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="presentation.html">Présentation du jeu</a></li>
+						<li class="tutoriel"><a href="Tutos.html">Tutoriaux</a></li>
+						<li><a href="histoires.html">Récits</a></li>
+						<li><a href="formulaire.html">Contact</a></li>
+						<li>Lien internes</li>
+						<li><a href="#perso_historique">Personnages</a></li>
+						<li><a href="#legend_lieu">Lieux</a></li>
+						<li><a href="#legend_artefact">Artefacts</a></li>
+						<li><a href="#legend_region">Régions</a></li>
+						<li><a href="#legend_civilisation">Civilisations</a></li>
+						<li><a href="#legend_art">Art</a></li>
+						<li><a href="#legend_structure">Structures</a></li>
+						<li><a href="#legend_carte_histoire">Cartes historiques</a></li>
+						<li><a href="#legend_age_monde">Ages monde</a></li>
+						
+					</ul>
+			</nav>
+		<!--Fin du bloc de navigation-->
+			
+		<!--Ici sera le gros bloc qui contiendra les articles-->	
+			<div id="content">
+				<h1>Tutoriels pour le mode légende</h1>
+			
+			<!--Intro-->
+				<article class="article">
+					<header>
+						<img src="image/nain.jpg" alt="" width="25px" height="25px">
+						<h2>Intro aux tutoriels</h2>
+					</header>
+					<p><a href="image/DF-present.png" target="blank"><img src="image/DF-present.png" width="150" height="150" alt="Photo d'article"></a>
+						Les tutos écrits ci-dessous seront courts. Le but est de faire une série de petits articles qui traiteront chacun d'un sujet en particulier.
+					</p>
+					
+					<p>
+						Le mode légende n'est en fait rien d'autre qu'un grand livre d'histoire.
+					</p>
+					
+					<p>
+						Ce mode retient toutes les informations sur votre monde.<br>
+						Nous pourrons y voir:
+					</p>
+					
+					<ul class="liste_image">
+						<li><a href="#perso_historique">Personnages historiques</a></li>
+						<li><a href="#legend_lieu">Lieux</a></li>
+						<li><a href="#legend_artefact">Artefacts</a></li>
+						<li><a href="#legend_region">Régions et régions souterraines</a></li>
+						<li><a href="#legend_civilisation">Civilisations et autres entités</a></li>
+						<li><a href="#legend_art">Art</a></li>
+						<li><a href="#legend_structure">Structures</a></li>
+						<li><a href="#legend_carte_histoire">Cartes historiques</a></li>
+						<li><a href="#legend_age_monde">Ages du monde</a></li>
+						
+					</ul>
+				</article>
+			<!--Fin de l'intro-->
+			
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+					<h2 id="perso_historique">Personnages historiques</h2>
+					</header>
+					<p><a href="image/perso_histo.png" target="blank"><img src="image/perso_histo.png" width="150" height="150" alt="Photo d'article"></a>
+						Le premier menu du mode Légende est "Historical Figures"<br>
+						En entrant dans ce menu, nous pourrons voir tous les personnages qui auront parcouru le monde que vous avez créé.
+						Ce pourra autant être des personnages non joueurs que des personnages que le joueur aura contrôllé via les modes aventurier ou forteresse.
+					</p>
+					<p>
+						Le nombre de personnages peut très vite augmenter et vous pourrez vous retrouver avec de bons milliers personnages répertoriés.<br>
+						Prenons exemple d'un monde créé avec 700 ans d'ancienneté. Le nombre de personnage recensé sera de 150 000.<br>
+					</p>
+					<p>
+						Ca fait un grand nombre de personnes. Aucun être humain censé pourrait lire autant de description.<br>
+						Il vous est possible de filtrer les recherches en appuyant sur <span class="touche">"f"</span>.<br>
+						Malheureusement, ces recherches se feront sur les noms des personnes et non pas sur les descriptions qui les accompagnent.
+					</p>
+					<p>
+						Chaque personnage aura d'affiché dans la liste son nom (prénom + nom de famille), sa description (si c'est un nain, un elfe ou une autre créature),
+						sa date de naissance et sa date de mort si le personnage a passé l'arme à gauche avant que nous consultions les légendes.
+					</p>
+					<p>
+						Nous pouvons voir un peu plus en détail les faits notables d'une personne en appuyant sur Enter sur son nom.<br>
+						La page du personnage s'affichera.<br>
+						Nous pourrons y lire pas mal d'information: la date de naissance du personnage, la parentèle du personnage (si elle est connue ce qui ne sera généralement pas le cas)<br>
+						En dessous, ce succéderont ses faits d'armes et autres faits notables. Un personnage que vous aurez contrôllé aura beaucoup plus de chose là-dedans qu'un personnage lambda.
+					</p>
+					<p>
+						Encore en dessous, nous aurons tout les autres détails notable. Par exemple, si le personnage a été en relation avec un autre personnage historique, si le personnage était membre d'une entité
+						s'ils sont relié à un lieu et le nombre d'être vivant qu'ils ont tués.
+					</p>
+					<p>
+						Dernière chose notable à dire: quand vous parcourerez la liste de personnage, vous en apercevrez d'une couleur différente.
+						Ce seront tout simplement des personnages que vous aurez contrôlé en mode aventurier.<br>
+						De cette façon, vous pourrez revoir vos exploits ainsi que vos échecs.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a> <a href="#perso_historique">Revenir au début de l'article</a></p>
+					
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+					<h2 id="legend_lieu">Lieux</h2>
+					</header>
+					<p><a href="image/site_legend.png" target="blank"><img src="image/site_legend.png" width="150" height="150" alt="Photo d'article"></a>
+						La seconde liste est celle des lieux.<br>
+						Elle énumère tous les endroits présents dans le monde.
+						Cette liste n'est pas aussi longue que celle des personnage mais elle est malgré tout pas mal fournie.
+					</p>
+					<p>
+						La liste affiche deux différentes information: le nom du site et le type de lieux.<br>
+						Il existe beaucoup de types de sites différents: les forteresses (fortress), Les camps (camp), Les tanières (lair), Les tours (tower),
+						Les tombes (tomb), les fosses sombres, les caves, ...
+					</p>
+					<p>
+						En appuyant sur "Enter", nous pouvons en voir un peu plus sur un lieu précis.
+						La page du lieu, affiche toute sorte d'évènement.
+						Nous avons bien sûr la création du site mais aussi le vol d'objet, l'arrivé de migrant, la mort de personnage, l'abandon du lieu par telle ou telle entité.
+					</p>
+					<p>
+						Certains lieux seront d'une couleur différente. Ce sera tout simplement toutes les forteresses naines que vous aurez fondé.
+					</p>
+					
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a></p>
+					
+				</article>
+			<!--Fin de l'article-->
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+					<h2 id="legend_artefact">Artefacts</h2>
+					</header>
+					<p><a href="image/artifact.png" target="blank"><img src="image/artifact.png" width="150" height="150" alt="Photo d'article"></a>
+						La page d'artefact va tout simplement lister la liste d'artefact créé depuis la création du monde.
+						La liste est à peine moins grande que celle des personnages.
+					</p>
+					<p>
+						Dans la liste, nous pouvons voir, le nom de l'artefact d'un côté, ainsi que le type d'artefact et le type de matériaux de l'autre.<br>
+						Vous remarquerez que le nombre de livre est impressionnant.
+					</p>
+					<p>
+						En appuyant sur <span class="touche">"Enter"</span>, vous pourrez en voir un peu plus sur l'artefact en question.
+						Sa date de création, son créateur et d'autres petites info sur l'artefact.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a></p>
+					
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+					<h2 id="legend_region">Régions et régions souterraines</h2>
+					</header>
+					<p><a href="image/region_legend.png" target="blank"><img src="image/region_legend.png" width="150" height="150" alt="Photo d'article"></a>
+						Ensuite, nous avons les régions et les régions souterraines dans deux pages différentes.
+					</p>
+					<p>
+						Si la page région liste toutes les régions de surface, celle des régions souterraines liste toutes les cavernes sous la surface.
+					</p>
+					<p>
+						Si la page région liste toutes les régions de surface, celle des régions souterraines liste toutes les cavernes sous la surface.
+					</p>
+					<p>
+						En appuyant sur <span class="touche">"Enter"</span>, nous pouvons voir toutes les actions s'étant passée sur le lieu.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a></p>
+					
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+					<h2 id="legend_civilisation">Civilisations et autres entités</h2>
+					</header>
+					<p><a href="image/civilisation.png" target="blank"><img src="image/civilisation.png" width="150" height="150" alt="Photo d'article"></a>
+						Cette page liste toutes les civilisations et toutes les entités existantes.
+						Les entités sont des groupes formés qui ne sont pas des civilisations. Ca peut aller des groupe de bandit aux escouades des armées.
+					</p>
+					<p>
+						Appuyer sur <span class="touche">"Enter"</span> permet de voir les actions notables de l'entité. Sa création notamment.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a></p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+					<h2 id="legend_art">Art</h2>
+					</header>
+					<p>
+						La page des art recense toutes les oeuvres d'art créée.<br>
+						Les oeuvres d'art sont pas mal associé à certain artefact.
+					</p>
+					<p>
+						Attention, vous ne verrez peut-être pas toutes les oeuvres d'art tout de suite. Pour les voir, vous devriez les avoir vu dans le jeu.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a></p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+					<h2 id="legend_structure">Structures</h2>
+					</header>
+					<p><a href="image/structure.png" target="blank"><img src="image/structure.png" width="150" height="150" alt="Photo d'article"></a>
+						Les structures ressemblent fortement aux lieux.<br>
+						Ce sont des lieux plus spécifiques comme des temples ou des tombes.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a></p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+					<h2 id="legend_carte_histoire">Carte historique</h2>
+					</header>
+					<p><a href="image/carte_historique.png" target="blank"><img src="image/carte_historique.png" width="150" height="150" alt="Photo d'article"></a>
+						La carte historique vous permettra de voir l'évolution des sociétés dans votre monde.
+					</p>
+					<p>
+						Quand vous arrivez sur la carte, vous êtes en l'an 1. Pour avancer dans les année (10 ans par 10 ans) appuyez sur la touche <span class="touche">"+"</span>.<br>
+						Pour reculer dans les années, appuyez sur la touche <span class="touche">"-"</span>.<br>
+						Pour avancer d'un siècle, appuyez sur la touche <span class="touche">"*"</span>.<br>
+						Pour reculer d'un siècle, appuyez sur <span class="touche">"/"</span>.
+					</p>
+					<p>
+						Avec le curseur, vous pouvez naviguer sur la carte.<br>
+						Au fil du temps, vous pouvez voir des tâches avancer sur la carte. Ce sont les influences des civilisations qui augmentent.
+						Certains territoire pourront être disputés par plusieurs civilisations. 
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a></p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+					<h2 id="legend_age_monde">Ages du monde</h2>
+					</header>
+					<p><a href="image/mythe.png" target="blank"><img src="image/mythe.png" width="150" height="150" alt="Photo d'article"></a>
+						Cette page vous permettront de voir les différents âges de votre monde.
+					</p>
+					<p>
+						Pour chaque âge, vous pourrez voir toutes les actions des personnages de façon chronologique.
+					</p>
+					<p>
+						Avec la touche <span class="touche">"p"</span> vous pouvez toujours décidé si vous voulez voir tous les évènements ou seulement ceux importants.
+						(ce qui donnera de toute façon beaucoup d'évènement à regarder.)
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a></p>
+				</article>
+			<!--Fin de l'article-->
+			
+			</div>
+		<!--Fin du bloc avec les articles-->	
+			
+		<!--Fin du bloc avec les articles-->
+			
+		</div>
+	<!--Fin du gros bloc avec la naviqation et les articles-->
+		
+	<!--Le pied de page-->
+		<footer id="footer">
+			<div>
+				<p>
+					Ce site a été créé par <em>Stelio ALIFIERAKIS</em><br>
+					Bachelier en informatique réseau & systèmes, finalité réseaux & télécommunications<br>
+					Haute Ecole en Hainaut, Campus Technique
+				</p>
+			</div>
+		</footer>
+	<!--Fin du pied de page-->	
+		
+	</body>
+</html>

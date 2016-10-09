@@ -1,0 +1,522 @@
+/* css du site*/
+
+html, body
+{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+
+body
+{
+	background-color:#000;
+}
+
+img
+{
+	border:0;
+}
+
+a
+{
+	color: #099;
+}
+
+a:visited
+{
+	color: #077;
+}
+
+a:hover
+{
+	color: #0aa;
+}
+
+a:active
+{
+	color: #0ff;
+}
+
+ul
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+li a
+{
+	text-decoration:none;
+}
+
+h1, h2, h3, h4, h5, p, ul, form
+{
+	color:#fafafa;
+}
+
+table
+{
+	margin:10px;
+}
+
+td
+{
+	border:2px solid #fafafa;
+}
+
+h1, h2
+{
+	text-align:center;
+}
+
+h1
+{
+	font-size:2em;
+}
+
+h2
+{
+	font-size:1.8em;
+}
+
+h3
+{
+	font-size:1.4em;
+}
+
+h4
+{
+	font-size:1.2em;
+}
+
+h5
+{
+	font-size:1em;
+}
+
+#principal
+{
+	width:960px;
+	margin:0 auto;
+	padding:0;
+	border-left:2px solid #001000;
+	border-right:2px solid #001000;
+}
+
+#main
+{
+	position: relative;
+	background-color:#000033;
+	width:940px;
+	overflow:auto;
+	margin:0 auto;
+}
+
+/* header */
+
+/*#header
+{
+	width:100%;
+}*/
+
+#header div
+{
+	background-color:#200;
+	height:50px;
+	width:860px;
+	margin:0 auto;
+	position:relative;
+	padding-top:90px;
+	padding-left:100px;
+	border-radius:0 0 10px 10px;
+}
+
+header span#image_fond
+{
+	display:block;
+	position:absolute;
+	top:0;
+	right:300px;
+	height:100px;
+	width:500px;
+	background-image:url(../image/logo.png);
+	background-repeat:no-repeat;
+	background-position:top right;
+}
+
+/*#header ul
+{
+
+}*/
+
+#header li
+{
+	display:inline;
+	display:inline-block;
+	margin: 0 5px;
+	position:relative;
+}
+
+#header div li span
+{
+	background-color:#443333;
+	display:block;
+	padding: 7px 30px;
+	color:#488;
+	border-radius:10px;
+	font-size:1.2em;
+}
+
+#header div li a
+{
+	background-color:#770000;
+	display:block;
+	padding: 7px 30px;
+	color:#0aa;
+	border-radius:10px;
+	font-size:1.2em;
+}
+
+#header div li a#lien_spec
+{
+	background-color:#884400;
+}
+
+/*#header div li a span#fleche
+{
+	display:block;
+	position:absolute;
+	background-color:transparent;
+	height:30px;
+	width:30px;
+	top:10px;
+	left:7px;
+	background-image:url(../image/fleche.png);
+	background-repeat:no-repeat;
+	border-radius:0;
+}
+#header div li a span#fleche_droite
+{
+	display:block;
+	position:absolute;
+	background-color:transparent;
+	height:30px;
+	width:30px;
+	top:10px;
+	right:-72px;
+	background-image:url(../image/fleche.png);
+	background-repeat:no-repeat;
+	border-radius:0;
+}*/
+
+#header ul ul
+{
+	display:none;
+}
+
+#header div li a:hover
+{
+	background-color:#990000;
+	color:#0dd;
+}
+#header div li a#lien_spec:hover
+{
+	background-color:#aa5500;
+	color:#0dd;
+}
+
+#header div li.tutoriel:hover ul#menu_deroul
+{
+	display:block;
+	position:absolute;
+	background-color:#005555;
+	width:135px;
+	z-index:8;
+	padding:0px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+
+#header div li.tutoriel:hover a#lien_spec
+{
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+}
+
+#header div li.tutoriel:hover ul#menu_deroul li a
+{
+	display:block;
+	background-color:#005555;
+	padding: 7px 25px;
+	width:73px;
+	text-align:center;
+	/*border-bottom: 1px solid #080;
+	border-top: 1px solid #080;*/
+	margin:2px auto;
+	color:#fff;
+	z-index:10;
+}
+
+#header div li.tutoriel:hover ul#menu_deroul li a:hover
+{
+	background-color:#007777;
+	color:#0aa;
+}
+
+#header div li a:active
+{
+	background-color:#bb0000;
+	color:#0ee;
+}
+
+#header div li a#lien_spec:active
+{
+	background-color:#ff9900;
+	color:#0dd;
+}
+
+#header div li.tutoriel:hover ul#menu_deroul li a:active
+{
+	background-color:#009999;
+	color:#0dd;
+}
+
+#header img
+{
+	position:absolute;
+	top:45px;
+	left: 30px;
+}
+
+/* main */
+
+
+
+/* nav */
+#nav
+{
+	float:left;
+	width:150px;
+	margin:10px;
+	margin-bottom:5px;
+	position:fixed;
+	z-index:5;
+}
+
+#nav ul
+{
+	text-align:center;
+	padding:10px 2px;
+	padding-bottom:1px;
+	background-color:#420000;
+}
+
+/*#nav li
+{
+
+}*/
+
+#nav li a
+{
+	background-color:#600000;
+	color:#0aa;
+	display:block;
+	padding: 3px 10px;
+	margin: 4px 1px;
+}
+
+#nav li a:hover
+{
+	background-color:#990000;
+	color:#0dd;
+}
+
+#nav li a:active
+{
+	background-color:#bb0000;
+	color:#0ee;
+}
+
+/* content */
+#content
+{
+	background-color:#390505;
+	float:right;
+	min-height:700px;
+	width:750px;
+	margin:10px;
+	overflow:auto;
+}
+
+/* article */
+.article
+{
+	border:4px solid #770000;
+	min-height:250px;
+	margin:10px;
+	clear:both;
+	padding:0;
+	overflow:auto;
+	padding-bottom:10px;
+	border-radius:10px;
+}
+
+.article header
+{
+	margin:0;
+	padding:0;
+	background-color:#770000;
+}
+.article header img, form header img
+{
+	float:right;
+}
+
+.article h2
+{
+	margin:0;
+	padding:0;
+}
+
+.article img
+{
+	float:left;
+	margin:0 10px 0 20px;
+}
+
+.article p.image_centre
+{
+	text-align:center;
+}
+/*.article p#image_centre img
+{
+	float:none;
+}*/
+.article p
+{
+	margin:10px;
+	clear:right;
+	margin-top:5px;
+}
+
+.article p.lien_dessous
+{
+	float:right;
+	font-size:0.9em;
+	clear:both;
+}
+
+.article ul
+{
+	/*float: right;*/
+	/*margin-right:150px;*/
+	list-style:circle;
+	margin-bottom:30px;
+	padding-left:100px;
+}
+
+.article ul.liste_image
+{
+	padding-left:210px;
+}
+.article h3, h4, h5
+{
+	clear:both;
+	margin-left:10px;
+	margin-bottom:5px;
+	margin-top:25px;
+}
+
+td h5
+{
+	margin:10px;
+	text-align:center;
+}
+
+.article span.touche
+{
+	color:#8a8;
+}
+
+/*formulaire*/
+
+form
+{
+	width:700px;
+	margin: 10px auto;
+	padding:0;
+	padding-bottom:10px;
+	clear:both;
+	overflow:auto;
+	border:4px solid #770000;
+	border-radius:10px;
+}
+
+form h2
+{
+	margin:0;
+	padding:0;
+	background-color: #770000;
+}
+
+form fieldset
+{
+	margin:10px;
+}
+
+form label
+{
+	line-height:2;
+}
+
+form span
+{
+	float:left;
+	width:300px;
+	text-align:right;
+}
+
+form input[type|='text'], input[type|='submit']
+{
+	float:right;
+	margin-top:5px;
+	margin-right:10px;
+}
+
+form input[type|='text']
+{
+	margin-right:150px;
+}
+
+form select
+{
+	float:right;
+	margin-right:225px;
+	margin-top:5px;
+}
+
+form span#choose
+{
+	width:200px;
+	float:right;
+	margin-right:150px;
+}
+
+/* footer */
+#footer
+{
+	clear:both;
+	background-color:#200;
+	width:940px;
+	margin:0 auto;
+	padding:10px;
+	padding-bottom:5px;
+	border-radius:10px 10px 0 0;
+	z-index:9;
+}
+
+#footer p
+{
+	margin:0;
+}

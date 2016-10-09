@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Création du monde</title>
+		<link rel="stylesheet" href="css/style.css">
+		<!--[if lte IE 8]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('article');
+				document.createElement('section');
+				document.createElement('footer');
+			</script>
+		<![endif]-->
+	</head>
+	<body>
+	<div id="principal">
+	
+	<!--Ici sera la bannière du site avec le menu principal-->
+		<header id="header">
+			<div>
+				<a href="index.html"><img src="image/min_logo.png" width="50" height="75" alt="Mon logo"></a>
+				<span id="image_fond"></span>
+				<ul>
+					<li><a href="index.html">Acceuil</a></li>
+					<li><a href="presentation.html">Présentation du jeu</a></li><li class="tutoriel">
+						<a href="Tutos.html" id="lien_spec">Tutoriaux</a>
+						<ul id="menu_deroul">
+							<li><a href="creation_monde.html">Création du monde</a></li>
+							<li><a href="Tuto_forteresse.html">Forteresse</a></li>
+							<li><a href="Tuto_aventure.html">Aventurier</a></li>
+							<li><a href="Tuto_legend.html">Légende</a></li>
+							<li><a href="FAQ.html">FAQ</a></li>
+						</ul>
+					</li><li><a href="histoires.html">Récits</a></li>
+					<li><a href="formulaire.html">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+	<!--Fin de la bannière-->
+		
+	<!--Ce sera le gros bloc qui comportera le bloc de navigation et les articles-->
+		<div id="main">
+		
+		<!--Le bloc de navigation à gauche-->
+			<nav id="nav">
+				<ul>
+					<li>Liens</li>
+					<li><a href="index.html">Acceuil</a></li>
+					<li><a href="presentation.html">Présentation du jeu</a></li>
+					<li class="tutoriel"><a href="Tutos.html">Tutoriaux</a></li>
+					<li><a href="histoires.html">Récits</a></li>
+					<li><a href="formulaire.html">Contact</a></li>
+				</ul>
+			</nav>
+		<!--Fin du bloc de navigation-->
+			
+		<!--Ici sera le gros bloc qui contiendra les articles-->
+			<div id="content">
+				<h1>Création du monde</h1>
+				
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+						<img src="image/nain.png" alt="" width="25px" height="25px">
+						<h2>Créer son monde</h2>
+					</header>
+					<p><a href="image/DF-present.png" target="blank"><img src="image/DF-present.png" width="150" height="150" alt="Photo d'article"></a>
+						Vous avez téléchargé le jeu mais vous vous trouvez en face d'un menu comme celui-ci. <!--ajouter ici une image du menu-->
+						Et oui, avant de pouvoir jouer, vous devrez d'abord créer le monde dans lequel vous vous trouverez.
+					</p>
+					<p>
+						Vous pourrez même généré d'autres mondes après celui-ci. Vous n'êtes pas obligé de vous cantonner à un seul monde.
+					</p>
+					<p>
+						Pour créer un nouveau monde, il vous suffit de sélectionner l'option New World.
+					</p>
+					<p>
+						Il est très facile de créer un monde mais il est moins aisé de comprendre ce qu'on est vraiment de faire quand on le crée.
+					</p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Un article de la page-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo10.png" alt="" width="25px" height="25px">
+						<h2 id="option_crea">Option de création</h2>
+					</header>
+					<p>
+						<a href="image/monde.png" target="blank"><img src="image/monde.png" width="150" height="150" alt="Photo d'article"></a>
+						Et oui, avant de générer votre monde, il va falloir choisir quelques options autour desquelles la génération du monde.
+						<br>
+						Nous avons les options suivantes:
+					</p>
+					<ul class="liste_image">
+						<li>World Size</li>
+						<li>History</li>
+						<li>Number of Civilization</li>
+						<li>Number of Beast</li>
+						<li>Natural Savagery</li>
+						<li>Mineral Occurence</li>
+					</ul>
+					<h3>World Size</h3>
+					<p>
+						Ce paramètre gérera la taille du monde.
+					<br>
+						En effet, vous pourrez très bien créer des mondes immenses ou bien minuscules.
+					</p>
+					<h3>History</h3>
+					<p>
+						Ce paramètre génèrera l'histoire de votre monde. Vous pourrez choisir de commencer vos aventures avec un monde neuf ou bien dans un monde qui a une longue histoire derrière lui.
+					</p>
+					<h3>Number of Civilization</h3>
+					<p>
+						Ce paramètre vous permettra de choisir le nombre de ville, village,... qui se trouveront sur votre monde.
+					</p>
+					<h3>Number of Beast</h3>
+					<p>
+						Ce paramètre est le nombre de bêtes mythique qui parcourent votre monde (dragon, titan,...). Plus vous en mettrez plus vous risquerez d'en croiser.
+					</p>
+					<h3>Natural Savagery</h3>
+					<p>
+						Ce paramètre sert à choisir le nombre de bête "normale" qui risque de vous attaquer lors de vos aventures.
+					</p>
+					<h3>Mineral Occurence</h3>
+					<p>
+						Ici, nous gérerons les minéraux de vos mondes. Très important que ce soit pour le mode aventure ou Forteress.
+					</p>
+					<p>
+						En mode Forteresse, ca permettra de paramétrer la quantité de minéraux que vous trouverez dans vos sols.
+					</p>
+					<p>
+						En mode Aventure, ça aura un effet sur le choix des objets, armes, armures que vous pourrez obtenir dans les magasins.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a> <a href="#option_crea">Revenir au début de l'article</a></p>
+				</article>
+			<!--Fin de l'article-->
+			
+			</div>
+		<!--Fin du bloc avec les articles-->
+		
+		</div>
+	<!--Fin du gros bloc avec la naviqation et les articles-->
+		
+	<!--Le pied de page-->
+		<footer id="footer">
+			<div>
+				<p>
+					Ce site a été créé par <em>Stelio ALIFIERAKIS</em><br>
+					Bachelier en informatique réseau & systèmes, finalité réseaux & télécommunications<br>
+					Haute Ecole en Hainaut, Campus Technique
+				</p>
+			</div>
+		</footer>
+	<!--Fin du pied de page-->		
+	
+	</div>
+	</body>
+</html>

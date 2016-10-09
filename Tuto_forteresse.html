@@ -1,0 +1,2473 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Tutoriels pour le mode forteresse</title>
+		<link rel="stylesheet" href="css/style.css">
+		<!--[if lte IE 8]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+				<script>
+					document.createElement('header');
+					document.createElement('nav');
+					document.createElement('article');
+					document.createElement('section');
+					document.createElement('footer');
+				</script>
+		<![endif]--> 
+	</head>
+	<body>
+	<div id="principal">
+	
+	<!--Ici sera la bannière du site avec le menu principal-->
+		<header id="header">
+			<div>
+				<a href="index.html"><img src="image/min_logo.png" width="50" height="75" alt="Mon logo"></a>
+				<span id="image_fond"></span>
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="presentation.html">Présentation du jeu</a></li><li class="tutoriel">
+						<a href="Tutos.html" id="lien_spec">Tutoriaux</a>
+						<ul id="menu_deroul">
+							<li><a href="creation_monde.html">Création du monde</a></li>
+							<li><a href="Tuto_forteresse.html">Forteresse</a></li>
+							<li><a href="Tuto_aventure.html">Aventurier</a></li>
+							<li><a href="Tuto_legend.html">Légende</a></li>
+							<li><a href="FAQ.html">FAQ</a></li>
+						</ul>
+					</li><li><a href="histoires.html">Récits</a></li>
+					<li><a href="formulaire.html">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+	<!--Fin de la bannière-->	
+		
+	<!--Ce sera le gros bloc qui comportera le bloc de navigation et les articles-->	
+		<div id="main">
+		
+		<!--Le bloc de navigation à gauche-->
+			<nav id="nav">
+				<ul>
+					<li>Liens</li>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="presentation.html">Présentation du jeu</a></li>
+					<li class="tutoriel"><a href="Tutos.html">Tutoriaux</a></li>
+					<li><a href="histoires.html">Récits</a></li>
+					<li><a href="formulaire.html">Contact</a></li>
+					<li>Liens internes</li>
+					<li><a href="#lieu_install">Installation</a></li>
+					<li><a href="#prepar_voyage">Voyage</a></li>
+					<li><a href="#creuser">Creuser</a></li>
+					<li><a href="#forteresse_zone">Zones</a></li>
+					<li><a href="#forteresse_prod">Production</a></li>
+					<li><a href="#besoin">Besoins</a></li>
+					<li><a href="#armee">Armée</a></li>
+				</ul>
+			</nav>
+		<!--Fin du bloc de navigation-->
+			
+		<!--Ici sera le gros bloc qui contiendra les articles-->	
+			<div id="content">
+				<h1>Tutoriels du mode Forteresse</h1>
+				
+			<!--Intro-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo6.png" alt="" width="25" height="25">
+						<h2>Intro aux tutoriels</h2>
+					</header>
+					<p><a href="image/DF-present.png" target="blank"><img src="image/DF-present.png" width="150" height="150" alt="Photo d'article"></a>
+						Les tutos écrits ci-dessous seront courts. Le but est de faire une série de petits articles qui traiteront chacun d'un sujet en particulier.
+					</p>
+					<ul class="liste_image">
+						<li><a href="#lieu_install">Choisir le lieu où s'installer</a></li>
+						<li><a href="#prepar_voyage">Préparer son voyage</a></li>
+						<li><a href="#creuser">Creuser ses premières salles</a></li>
+						<li><a href="#forteresse_zone">Créer des zones</a></li>
+						<li><a href="#forteresse_prod">Gérer la production</a></li>
+						<li><a href="#besoin">Subvenir aux besoins élémentaires de vos nains</a></li>
+						<li><a href="#armee">Créer son armée</a></li>
+						
+					</ul>
+				</article>
+			<!--Fin de l'intro-->
+			
+			<!--Article lieu ou s'installer-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo7.png" alt="" width="25" height="25">
+						<h2 id="lieu_install">Choisir le lieu où s'installer</h2>
+					</header>
+					<p><a href="image/world.png" target="blank"><img src="image/world.png" width="150" height="150" alt="Photo d'article"></a>
+						Quand vous commencer un nouveau jeu en mode forteresse, vous tomberez directement sur la carte du monde.
+						Ou plutôt sur trois cartes. La première à droite sera la carte du monde telle qu'il est. La seconde, permet de faire un zoom sur cette carte et de choisir
+						la région où vous voudrez vous arrêter.
+						Enfin, la troisième, plus petite vous montrera la région où vous vous installerez.
+					</p>
+					<ul class="liste_image">
+						<li><a href="#lieu_install_deplace">Se déplacer sur la carte</a></li>
+						<li><a href="#lieu_install_info">Obtenir des informations sur la région</a></li>
+						<li><a href="#lieu_install_aventure">Embarquer à l'aventure</a></li>
+					</ul>
+					<h3>Choisir le lieu</h3>
+					<h4 id="lieu_install_deplace">Se déplacer sur la carte</h4>
+					<p>
+						Vous devez utiliser les touches multidirectionnelles pour naviguer sur la carte principale (celle qui zoom sur la carte du monde).
+						<br>
+						Il y aura un carré/rectangle en surbrillance pour chaque région que vous visiterez. Ce sera le lieu où s'installera votre forteresse.
+					</p>
+					<p>
+						Il est possible de le déplacer sur votre région.<br>
+						Avec la touche <span class="touche">"h"</span>, vous le déplacerez vers la gauche. <br>
+						Avec <span class="touche">"k"</span>, vous le déplacerez vers la gauche.<br>
+						Avec <span class="touche">"m"</span>, vous le déplacerez vers le bas.<br>
+						Avec <span class="touche">"u"</span>, vous le déplacerez vers le haut.<br>
+						<strong>Important: Les touches devront être en minuscules.</strong><br>
+					</p>
+					<p>
+						Il est possible modifier la taille de votre zone d'action sur la région.<br>
+						Avec la touche <span class="touche">"H"</span>, vous le rétrécirez horizontalement. <br>
+						Avec <span class="touche">"k"</span>, vous l'agrandirez horizontalement.<br>
+						Avec <span class="touche">"M"</span>, vous le rétrécirez verticalement.<br>
+						Avec <span class="touche">"U"</span>, vous l'agrandirez verticalement.<br>
+						<strong>Important: Les touches devront être en majuscules.</strong><br>
+					</p>
+					<h4 id="lieu_install_info">Obtenir des informations sur la région</h4>
+					<p>
+						Chaque régions a ses informations. Vous pouvez le voir tout à droite, à côté de la carte du monde générale.
+						Nous pouvons voir toute sorte d'information sur la carte. Nous avons successivement: les infos générale, les voisins, votre
+						<a href="Tuto_legend.html#legend_civilisation">civilisation</a>, l'élévation relative et l'indicateur de falaise.
+						Vous pourrez changer d'infos via la touche <span class="touche">"TAB"</span>.
+					</p>
+					<p>
+						Dans les informations générale, nous avons beaucoup d'infos utiles.
+						Nous avons le nom du lieu, le type de terrain, la température, la végétation et l'environnement.
+						<br>
+						Il est important de prendre en compte la température, la présence d'arbres et d'autres végétations dans votre région sans oublier de jeter un regard sur
+						l'environnement. Ces détails seront très important pour la suite.
+						En effet, si vous vous trouvez dans un lieu chaud, vous jouerez différemment que si vous vous trouvez dans un lieu froid car les saisons ne seront
+						pas les mêmes.<br>
+						Le nombre d'arbre permettra de savoir quelles seront les ressources en <a href="#matiere_prems_bois">bois</a> disponibles sur la zone.<br>
+						L'environnement servira à connaître la proprotion du danger que pourraient affronter vos nains.<br>
+					</p>
+					<p>
+						En dessous de ces infos, d'autre détails apparaîtront ou pas.
+						Ainsi vous pourrez savoir par exemple si le lieu que vous avez choisi possède une aquifer en sous-sol ou pas. (l'aquifère étant de l'eau dans le sous-sol, est
+						très ennuyante à traverser sans noyer des nains.) <br>
+						Vous pourrez aussi voir si vous avez du <a href="#matiere_prems_minerai">minerai</a> en sous-sol.
+					</p>
+					<p>
+						Les information du voisinage vous permet de voir quels seront les civilisations qui seront en contact avec vous.
+						C'est informations seront très important pour déterminer quels peuples pourront commercer avec vous et lesquels vous attaqueront.
+					</p>
+					<p>
+						Dans les informations de votre <a href="Tuto_legend.html#legend_civilisation">civilisation</a>, vous pourrez choisir la civilisation à laquelle vous voudrez
+						appartenir. Vous pourrez aussi voir la capitale du royaume.
+					</p>
+					<p>
+						La hauteur relative vous montrera tout simplement si le terrain sera haut ou pas et l'indicateur de falaise montrera les différences d'élévation entre les
+						terrains.
+					</p>
+					<p>
+						Ces informations peuvent vous aider ou pas. Et avant de partir à l'aventure, nous devons voir une dernière info qui peut avoir son importance.
+						Je veux parler des biômes. En effet, la région où vous vous installerez pourrait très bien être séparée en plusieurs biômes.
+						Vous pouvez voir ses biômes en appyant sur les touches <span class="touche">"F1"</span>, <span class="touche">"F2"</span>,<span class="touche">"F3"</span>,
+						<span class="touche">"F4"</span> selon le nombre de biômes qui se partageront le terrain.<br>
+						<strong>Conseil: débarquer sur un terrain partagé en plusieurs biômes peut être intéressant pour pouvoir profiter de l'avantages de ces biômes.</strong>
+					</p>
+					<h4 id="lieu_install_aventure">Embarquer à l'aventure</h4>
+					<p>
+						Maintenant que vous avez eu toutes les infos sur les régions, que vous avez trouvé le meilleur endroit possible, que vous avez placé et choisi la
+						taille du terrain que vous contrôlerez,	il est temps pour vous d'embarquer avec la touche <span class="touche">"e"</span>.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a> <a href="#lieu_install">Revenir au début de l'article</a></p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Article préparer son voyage-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo8.png" alt="" width="25" height="25">
+						<h2 id="prepar_voyage">Préparer son voyage</h2>
+					</header>
+					<p><a href="image/attrib_nains.png" target="blank"><img src="image/attrib_nains.png" width="150" height="150" alt="Photo d'article"></a>
+						Bien préparer votre installation est important.
+						<br>
+						Après que vous ayez choisi le lieu de votre future forteresse, vous pourrez opter de jouer maintenant ou de préparer le voyage minutieusement.<br>
+						Je déconseille de choisir la première option. En effet, si vous choisissez de jouer directement, ce sera l'ordinateur qui choisira lui-même
+						ce que vous emporterez et les aptitudes de vos nains.
+					</p>
+					<ul class="liste_image">
+						<li><a href="#prepar_voyage_aptitudes">Choisir les compétences</a></li>
+						<li><a href="#prepar_voyage_paquetage">Choisir son paquetage</a></li>
+						<li><a href="#prepar_voyage_aventure">Se lancer à l'aventure</a></li>
+					</ul>
+					<h3>Préparer son voyage minutieusement</h3>
+					<p>
+						Si vous choisissez la seconde option, vous tomberez sur la page de vos 7 nains de départs.
+						A gauche vous verrez les noms de vos nains alors qu'à droite vous apercevrez tout un tas de compétences que vous pourrez leur donner.
+						Certaines de ces compétences feront référence aux <a href="#prod_job">professions</a> que pourront avoir vos nains.
+						De base ces compétences ne sont pas du tout attribuées.
+						En bas vous verrez le nombre de point que vous pourrez attribuer. <br>
+						<strong>Attention: le nombre de point est commun pour les compétence et la cargaisons à emporter.</strong>
+					</p>
+					<h4 id="prepar_voyage_aptitudes">Choisir les compétences</h4>
+					<p>
+						Avant de choisir, nous devons apprendre à naviguer dans ce menu.
+						Les touches mulitidirectionnelle "droite" et "gauche" vous permettront de changer la colonne dans laquelle vous bougerez.
+						(Pour savoir si vous êtes dans la colonne aptitudes, regardez si l'une des aptitudes est en surbrillance, si ce n'est pas le cas, vous êtes dans la
+						colonne personnage)
+						Avec les touches "haut" et "bas", vous pourrez faire défiler les éléments de la colonne choisie.<br>
+						Quand vous serez sur une aptitude, ajouter un niveau à cette aptitudes avec la touche <span class="touche">"+"</span> et enlevez un niveau avec la touche
+						<span class="touche">"-"</span>.
+					</p>
+					<p>
+						Maintenant que vous savez naviguer dans le menu. Voyons un peu les compétences qui pourront vous êtes utiles au départ.<br>
+					</p>
+					<p>
+						L'aptitude "Miner" est très importante, ça permettra à vos nains de <a href="#creuser">creuser</a> des galeries.
+						Plus cette aptitudes est haute, plus les nains mineront vite.<br>
+					</p>
+					<p>
+						L'aptitude "Wood cutter" servira au <a href="#prof_bois_bucheron">bûcheron</a>.<br>
+					</p>
+					<p>
+						Les aptitudes "Mason" (<a href="#prof_pierre_macon">maçon</a>) et "Carpenter" (<a href="#prof_bois_charpentier">charpentier</a>) serviront respectivement pour le travail
+						de la pierre et du bois mais aussi pour la construction.
+					</p>
+					<p>
+						L'aptitude "Fisherman" permettra de désigner le <a href="#prof_peche_pecheur">pêcheur</a> du groupe ce qui peut être un plus non négligeable pour
+						trouver de la <a href="#matiere_fini_nourriture">nourriture</a> à des endroits où il y a une rivière. (C'est pour cela que le choix du terrain est très important)<br>
+					</p>
+					<p>
+						Les aptitudes "Grower" et "Herbalist" ont aussi leur importance. Le "Grower" sera le <a href="#prof_ferme_fermier">fermier</a> qui plantera les champs alors que l'Herbalist
+						sera le <a href="#prof_ferme_cueilleur">cueilleur</a> et ramassera les <a href="#matiere_prems_plante">plantes</a> se trouvant sur la zone.<br>
+					</p>
+					<p>
+						Activer un "Brewer" et un "Cook" vous permettra d'avoir un <a href="#prof_ferme_cuisinier">cuisinier</a> et un <a href="#prof_ferme_brasseur">brasseur</a> qui fera la bière
+						(très importante dans ce jeu). <br>
+					</p>
+					<p>
+						L'"Ambusher" sera le <a href="#prof_chasse_chasseur">chasseur</a>, important pour avoir de la viande provenant de la
+						<a href="#besoin_chasse">chasse</a>.
+					</p>
+					<p>
+						Choisir des aptitudes de combats peuvent être intéressantes aussi pour créer sa propre <a href="#armee">armée</a>.<br>
+						Nous verrons les <a href="#armee_attribut">aptitudes de combats</a> plus en détails quand nous parlerons des armées.
+					</p>
+					<p>
+						Il existe plein d'autres aptitudes mais connaître celles-ci seront importantes pour le début.
+					</p>
+					<h4 id="prepar_voyage_paquetage">Choisir son paquetage</h4>
+					<p>
+						En appuyant sur la touche <span class="touche">"TAB"</span>, vous arriverez dans le choix du paquetage que vous utiliserez.<br>
+						Vous aurez aussi deux colonne.<br>
+						Celle de gauche sera les objets et vivres que vous emporterez.<br>
+						Celle de droite sera les animaux que vous emporterez dans votre voyage.
+					</p>
+					<p>
+						La navigation entre les deux colonne ainsi que l'ajout d'objet/animaux se fera de la même façon que sur la page de vos nains.
+					</p>
+					<p>
+						En arrivant sur la page, vous aurez déjà des objets qui seront ajoutés à votre paquetage.<br>
+						Vous pouvez ajouter des objets à cette liste de base en appuyant sur <span class="touche">"n"</span>.<br>
+						<strong>Conseil 1 : </strong> Enlever l'enclume ("Anvil" en anglais) peut être judicieux au départ, en effet, le travail du métal dans la
+						<a href="#etabli_forge">forge</a> se feront assez tard dans la forteresse. Cela vous permettra d'avoir plus de point pour acheter plus de choses<br>
+						<strong>Conseil 2 :</strong> Prenez le maximum de nourriture et de boisson possible de façon à ne pas mourir de faim dès le début.
+					</p>
+					<p>
+						Au niveau des <a href="#matiere_prems_animaux">animaux</a>, vous pouvez choisir n'importe lesquels mais deux animaux sont essentiels:
+					</p>
+					<ul>
+						<li>Les chiens</li>
+						<li>Les chats</li>
+					</ul>
+					<p>
+						En effet, les chiens seront utiles. Ce sont des animaux que l'on peut entrainer pour la <a href="#prof_chasse_chasseur">chasse</a> ou la guerre.<br>
+						De plus un bon chien de garde peut éloigner les intrus.
+					</p>
+					<p>
+						Les chats quant à eux éliminent la vermine de votre forteresse.
+					</p>
+					<h4 id="prepar_voyage_aventure">Se lancer à l'aventure</h4>
+					<p>
+						Quand vous serez prêts, appuyez sur <span class="touche">"e"</span> et c'est parti.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a> <a href="#prepar_voyage">Revenir au début de l'article</a></p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Article Creuser salle-->
+				<article class="article">
+					<header>
+						<img src="image/nain.png" alt="" width="25" height="25">
+						<h2 id="creuser">Creuser ses premières salles</h2>
+					</header>
+					<p>
+						Pour creuser, vous devrez ouvrir le menu "Designation" avec la touche <span class="touche">"d"</span>.<br>
+						Un nouveau menu s'ouvre avec plein d'options.<br>
+						Ici, nous allons nous occuper seulement des options "Mine", "Up stair", "Down stair", "U/D stair".
+					</p>
+					<p><a href="image/minage.png" target="blank"><img src="image/minage.png" width="150" height="150" alt="Photo d'article"></a>
+						En appuyant sur <span class="touche">"d"</span>, vous activerez l'option "Mine". Il vous suffit ensuite de choisir un endroit sous terre et d'appuyer
+						une première fois sur <span class="touche">"Enter"</span>.
+						Quand le symbole clignote, déplacez-vous et appuyez une seconde fois sur <span class="touche">"Enter"</span>. Vous venez de définir votre première salle.
+					</p>
+					<p>
+						Pour construire un escalier, choisissez tout d'abord l'option "Downstair" avec la touche <span class="touche">"j"</span> puis appuyez deux fois sur
+						<span class="touche">"Enter"</span> sans bouger d'entrée.
+						Ensuite, changer d'étage avec les touches <span class="touche">"&lt;"</span> ou <span class="touche">"&gt;"</span>.
+						(l'une d'elle vous fera aller à l'étage supérieur et l'autre vous fera aller à l'étage inférieur)
+						Si vous voulez un escalier qui vous fait monter et descendre, vous pouvez le faire en choisissant l'option "U/D stair" (<span class="touche">"i"</span>).
+						Enfin, le "Up stair" (<span class="touche">"u"</span>) vous permettra d'avoir un escalier qui monte.
+					</p>
+					<p>
+						De cette façon, vous pourrez creuser vos salles et créer vos propres étages.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a></p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Article zones-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo3.png" alt="" width="25" height="25">
+						<h2 id="forteresse_zone">Créer des zones</h2>
+					</header>
+					<p>
+						Nous pouvons créer des zones spéciales dans le jeu.
+						Pour afficher le menu des zones, appuyez sur la touche <span class="touche">"i"</span> depuis le menu principal.
+						Appuyez une fois sur <span class="touche">"Enter"</span>, déplacez votre curseur et rappuyez sur <span class="touche">"Enter"</span>.
+					</p>
+					<p class="image_centre"><a href="image/zone.png" target="blank"><img src="image/zone.png" width="150" height="150" alt="Photo d'article"></a></p>
+					<p>
+						Vous pouvez voir toutes les zones créées depuis le menu zone. Si vous vous mettez sur une zone avec votre curseur, vous pouvez choisir de la spécifier.
+					</p>
+					<p>
+						Avec la touche <span class="touche">"x"</span> puis encore avec <span class="touche">"X"</span>, vous pouvez supprimer une zone.
+					</p>
+					<p>
+						La liste des zones possible :
+					</p>
+					<ul class="liste_image">
+						<li><a href="#zone_eau">Zone de ressource D'eau</a></li>
+						<li><a href="#zone_peche">Zone de pêche</a></li>
+						<li><a href="#zone_fruit">Zone de ramassage des fruits</a></li>
+						<li><a href="#zone_decharge">Décharge</a></li>
+						<li><a href="#zone_paturage">Pâturage</a></li>
+						<li><a href="#zone_fosse">Fosse/étang</a></li>
+						<li><a href="#zone_sable">Zone d'extraction du sable</a></li>
+						<li><a href="#zone_argile">Zone d'extraction de l'argile</a></li>
+						<li><a href="#zone_rencontre">Aire de rencontre</a></li>
+						<li><a href="#zone_hopital">Hôpital</a></li>
+						<li><a href="#zone_animaux">Zone d'entraînement d'animaux</a></li>
+					</ul>
+					<h3 id="zone_eau">Zone de ressource D'eau ("Water Source")</h3>
+					<p>
+						Permet de désigner un point d'eau où les nains pourront se désaltérer faute d'<a href="#matiere_fini_alcool">alcool</a>.
+					</p>
+					<p>
+						Pour spécifier la zone, appuyez sur <span class="touche">"w"</span>.
+					</p>
+					<h3 id="zone_peche">Zone de pêche ("Fishing")</h3>
+					<p>
+						Permet de désigner une zone où les <a href="#prof_peche_pecheur">pêcheurs</a> pourront se rendre pour la <a href="#besoin_peche">pêche</a>.
+						Ceux-ci ne sauront pas obligé de s'y rendre pour pêcher mais ils utiliseront ces endroits en priorité.
+					</p>
+					<p>
+						Pour spécifier la zone, appuyez sur <span class="touche">"f"</span>.
+					</p>
+					<h3 id="zone_fruit">Zone de ramassage des fruits ("Gather/Pick Fruit")</h3>
+					<p>
+						Une zone qui est apparue avec la nouvelle version du jeu.
+						Désigne une zone de ramassage où les nains se rendront pour ramasser les <a href="#matiere_prems_plante">fruits</a> tombés au sol ou pour cueillir ceux qui se
+						trouvent encore dans les branches.
+					</p>
+					<p>
+						Pour spécifier la zone, appuyez sur <span class="touche">"g"</span>.<br>
+						Avec la touche <span class="touche">"G"</span> vous pouvez changer quelques options de la spécification de la zone.
+					</p>
+					<h3 id="zone_decharge">Décharge ("Garbage Dump")</h3>
+					<p>
+						Permet de désigner une zone où les nains jetteront tous les objets que vous aurez désigné comme déchets.
+					</p>
+					<p>
+						Pour spécifier la zone, appuyez sur <span class="touche">"d"</span>.
+					</p>
+					<h3 id="zone_paturage">Pâturage ("Pen/Pasture")</h3>
+					<p>
+						Ce sera la zone où vos animaux herbivores pourront trouver l'herbe qui leur permettront de survivre.
+						Attention, plus il y aura de bête sur un pâturage moins il y aura d'herbe pour tous.
+					</p>
+					<p>
+						Pour spécifier la zone, appuyez sur <span class="touche">"n"</span>. <br>
+						Avec la touche <span class="touche">"N"</span>, vous pourrez voir la liste des animaux que vous pourrez ajouter à la zone.
+						Vous n'aurez qu'à appuyer sur <span class="touche">"Enter"</span> pour choisir l'animal.
+					</p>
+					<h3 id="zone_fosse">Fosse/étang ("Pit/Pond")</h3>
+					<p>
+						La fosse permettra de mettre nos animaux dangereux alors que l'étang serviront pour nos poissons.
+					</p>
+					<p>
+						Pour spécifier la zone, appuyez sur <span class="touche">"p"</span>.<br>
+						Avec la touche <span class="touche">"P"</span>, vous pourrez voir la liste des animaux que vous pourrez ajouter à la zone.
+						Vous n'aurez qu'à appuyer sur <span class="touche">"Enter"</span> pour choisir l'animal.
+					</p>
+					<h3 id="zone_sable">Zone d'extraction du sable ("Sand")</h3>
+					<p>
+						Permet à vos nains d'extraire le <a href="#matiere_prems_sable">sable</a> depuis ces zones.
+						Pour que l'extraction marche, il faudra que cette zone soit placée sur une zone sablonneux.
+					</p>
+					<p>
+						Pour spécifier la zone, appuyez sur <span class="touche">"s"</span>.
+					</p>
+					<h3 id="zone_argile">Zone d'extraction de l'argile ("Clay")</h3>
+					<p>
+						Permet à vos nains d'extraire l'<a href="#matiere_prems_argile">argile</a> depuis ces zones.
+						Pour que l'extraction marche, il faudra que cette zone soit placée sur une zone argileux.
+					</p>
+					<p>
+						Pour spécifier la zone, appuyez sur <span class="touche">"c"</span>.
+					</p>
+					<h3 id="zone_rencontre">Aire de rencontre ("Meeting Area")</h3>
+					<p>
+						Permet de créer une zone où les nains iront quand ils n'auront rien à faire.
+						Cela permet notamment de mettre vos nains en sécurité quand ils ne sont pas au <a href="#prod_job">travail</a>.
+					</p>
+					<p>
+						Pour spécifier la zone, appuyez sur <span class="touche">"m"</span>.
+					</p>
+					<h3 id="zone_hopital">Hôpital ("Hospital")</h3>
+					<p>
+						C'est l'endroit où les nains blessés seront placé dans l'attente de pouvoir guérir.<br>
+						C'est là que les <a href="#prof_soin">docteurs</a> guériront vos nains.
+					</p>
+					<p>
+						Pour spécifier la zone, appuyez sur <span class="touche">"h"</span>.
+						Avec <span class="touche">"H"</span> vous pourrez savoir quels sont les affaires nécessaires au soin des nains qui seront présents dans la zone.
+					</p>
+					<h3 id="zone_animaux">Zone d'entraînement d'animaux ("Animal Training")</h3>
+					<p>
+						C'est l'endroit où vous pourrez entraîner vos <a href="#matiere_prems_animaux">animaux</a> et les domestiquer.
+					</p>
+					<p>
+						Pour spécifier la zone, appuyez sur <span class="touche">"t"</span>.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a> <a href="#forteresse_zone">Revenir au début de l'article</a></p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Article production-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo5.png" alt="" width="25" height="25">
+						<h2 id="forteresse_prod">Gérer la production</h2>
+					</header>
+					<p>
+						Dwarf fortress permet de créer tout un tas d'objets et autres productions.
+					</p>
+					<ul>
+						<li><a href="#prod_etablis">Etablis</a></li>
+						<li><a href="#prod_fourneaux">Fourneaux</a></li>
+						<li><a href="#prod_job">Professions</a></li>
+						<li><a href="#prod_prod">Production</a></li>
+						<li><a href="#prod_manager">Semi-automatision de la production</a></li>
+						<li><a href="#prod_inventaire">Inventaire de la production</a></li>
+					</ul>
+					<h3 id="prod_etablis">Etablis</h3>
+					<p>
+						Avant de commencer une production, nous devrons avant tout commencer par ériger nos établis (Workshop en anglais) où tous les objets seront créés.
+						Pour cela, appuyez sur <span class="touche">"b"</span> depuis le menu principal puis sur <span class="touche">"w"</span>.<br>
+						Un menu va s'afficher avec la liste de tous les ateliers disponibles.<br>
+						Attention, certain établis auront besoin de choses en particulier.
+					</p>
+					<p class="image_centre"><a href="image/ateliers.png" target="blank"><img src="image/ateliers.png" width="150" height="150" alt="Photo d'article"></a></p>
+					<ul class="liste_image">
+						<li><a href="#etabli_maroquinerie">Maroquinerie</a></li>
+						<li><a href="#etabli_moulin_bras">Moulin à bras</a></li>
+						<li><a href="#etabli_meule">Meule</a></li>
+						<li><a href="#etabli_metier_tisser">Métier à tisser</a></li>
+						<li><a href="#etabli_tailleur">Atelier du tailleur</a></li>
+						<li><a href="#etabli_arc">Etabli du fabriquant d'arc</a></li>
+						<li><a href="#etabli_charpentier">Etabli du charpentier</a></li>
+						<li><a href="#etabli_forge">Forge</a></li>
+						<li><a href="#etabli_joaillier">Etabli du joaillier</a></li>
+						<li><a href="#etabli_macon">Etabli du maçon</a></li>
+						<li><a href="#etabli_boucherie">Boucherie</a></li>
+						<li><a href="#etabli_tannerie">Tannerie</a></li>
+						<li><a href="#etabli_artisan">Etabli de l'artisan</a></li>
+						<li><a href="#etabli_siege">Atelier de siège</a></li>
+						<li><a href="#etabli_meca">Etabli du mécanicien</a></li>
+						<li><a href="#etabli_distillerie">Distillerie</a></li>
+						<li><a href="#etabli_fermier">Atelier du fermier</a></li>
+						<li><a href="#etabli_cuisine">Cuisine</a></li>
+						<li><a href="#etabli_poissonnerie">Poissonnerie</a></li>
+						<li><a href="#etabli_potasse">Fabrique de potasse</a></li>
+						<li><a href="#etabli_teinture">Teinturerie</a></li>
+						<li><a href="#etabli_savon">Etabli du confectionneur de savon</a></li>
+						<li><a href="#etabli_presse">Presse à vis</a></li>
+					</ul>
+					<h4 id="etabli_maroquinerie">Maroquinerie</h4>
+					<p>
+					La maroquinerie c'est le travail du cuir. Cet établi permettra de travailler les cuirs produits par la tanneries
+					et d'en faire des objets et des vêtements. Cet établi aura besoin d'un nain avec la compétence "Leatherworking" d'activée ainsi que de cuirs.
+					</p>
+					<p>Appuyez sur la touche <span class="touche">"e"</span>.</p>
+					<h4 id="etabli_moulin_bras">Moulin à bras</h4>
+					<p>
+					Le moulin sert à transformer certaines plantes en farine, en huile ou en teintures.
+					Nous devons d'abord fabriquer le "Quern" dans l'<a href="#etabli_macon">établi du maçon</a> avant de pouvoir le placer.
+					Pour fonctionner, il aura besoin d'un <a href="#prof_ferme_meunier">meunier</a> et de <a href="#matiere_prems_plante">plantes</a>.
+					</p>
+					<p>Appuyez sur la touche <span class="touche">"q"</span>.</p>
+					<h4 id="etabli_meule">Meule</h4>
+					<p>
+					La meule a la même fonction que le moulin à bras mais à la différence prés qu'il ne demande aucun nain pour fonctionner.
+					Nous devons d'abord fabriquer la meule dans L'<a href="#etabli_macon">établi du maçon</a> avant de pouvoir la placer. Pour l'utiliser nous avons besoin d'utiliser les mécanismes.
+					</p>
+					<p>Appuyez sur la touche <span class="touche">"M"</span>.</p>
+					<h4 id="etabli_metier_tisser">Métier à tisser</h4>
+						<p>
+						Le métier à tisser sert à fabriquer les <a href="#matiere_inter_etoffe">étoffes</a> qui serviront pour confectionner les <a href="#matiere_fini_vetement">vêtements</a>.
+						Le nain qui s'en occupe doit avoir la compétence <a href="#prof_craft_weaving">"Weaving"</a> activée. Cet établi peut utiliser la laine ou les fils produit via les plantes.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"o"</span>.</p>
+						<h4 id="etabli_tailleur">Atelier du tailleur</h4>
+						<p>
+						Cet établi permet de confectionner des <a href="#matiere_fini_vetement">vêtements</a>.
+						Nous aurons besoin pour cela des <a href="#matiere_inter_etoffe">étoffes</a> et d'un <a href="#prof_craft_vetement">tailleur</a>.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"k"</span>.</p>
+						<h4 id="etabli_arc">Etabli du fabriquant d'arc</h4>
+						<p>
+						Cet établi permet de confectionner des arcs en bois.
+						Il n'a besoin que de <a href="#matiere_prems_bois">bois</a> et d'un nain avec la compétence "<a href="#prof_bois_arc">Crossbow-making</a>" d'activée.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"b"</span>.</p>
+						<h4 id="etabli_charpentier">Etabli du charpentier</h4>
+						<p>
+						L'établi du charpentier est l'un des établis de base à construire au tout début de votre aventure.
+						Cet établi permet de créer tout un tas de <a href="#matiere_fini_meuble">meubles</a> et autres objets en bois. Il n'a besoin que d'un
+						<a href="#prof_bois_charpentier">charpentier</a> et de bois comme matière première.
+						Attention, la ressource de <a href="#matiere_prems_bois">bois</a> dépendra de l'environnement de la région où vous vous installerez.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"c"</span>.</p>
+						<h4 id="etabli_forge">Forge</h4>
+						<p>
+						La forge permet de créer tout un tas d'objet en métaux.
+						Pour créer l'atelier, nous aurons besoin de matériaux insensibles au feu (fire-safe material) et d'une enclume.
+						La forge aura besoin pour fonctionner d'un <a href="#prof_metal">forgeron</a>, de <a href="#matiere_inter_barre">barre de métaux</a> fondues et
+						de <a href="#matiere_inter_charbon">charbon</a>.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"f"</span>.</p>
+						<h4 id="etabli_joaillier">Etabli du joaillier</h4>
+						<p>
+						Cet établi permet de tailler des <a href="#matiere_prems_joyau">pierres précieuses</a> puis de les incruster dans des objets.
+						Vous aurez besoin de <a href="#matiere_prems_joyau">pierres précieuses</a> brut et de nains avec les professions <a href="#prof_joaillerie">"Gems Cutting" et/ou "Gems Setting"</a> d'activées.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"j"</span>.</p>
+						<h4 id="etabli_macon">Etabli du maçon</h4>
+						<p>
+						L'établi du maçon est l'un des établis de base à construire au tout début de votre aventure.
+						Cet établi permet de créer tout un tas de <a href="#matiere_fini_meuble">meubles</a> et autres objets en pierre. Il n'a besoin que d'un <a href="#prof_pierre_macon">maçon</a> et de
+						<a href="#matiere_prems_pierre">pierre</a> comme matière première.
+						Si la pierre est facile à trouver en temps normal, une carte possédant un aquifer limitera fortement l'accès à cette ressource.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"m"</span>.</p>
+						<h4 id="etabli_boucherie">Boucherie</h4>
+						<p>
+						La boucherie permet de découper les carcasses fournies par les <a href="#prof_chasse_chasseur">chasseurs</a> ainsi que les animaux domestiques qu'on envoit à l'abattoir.
+						La boucherie permet de séparer les cadavres entre <a href="#">viande, os et peaux</a>. Elle a besoin pour fonctionner d'un <a href="#prof_ferme_boucher">boucher</a> et de carcasses.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"u"</span>.</p>
+						<h4 id="etabli_tannerie">Tannerie</h4>
+						<p>
+						La tannerie va créer des morceaux de <a href="#matiere_inter_cuir">cuirs</a> bruts à partir des peaux produites par la <a href="#">boucherie</a>.
+						Elle aura besoin de <a href="#matiere_inter_viande">peaux</a> et d'un <a href="#prof_ferme_tanneur">tanneur</a>.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"n"</span>.</p>
+						<h4 id="etabli_artisan">Etabli de l'artisan</h4>
+						<p>
+						Cet établi permet de confectionner tout un tas d'objet non essentiel à la communauté mais
+						qui augmenteront la richesse de votre forteresse. C'est aussi avec cet établi que nous créérons les flèches nécessaires aux <a href="#prof_chasse_chasseur">chasseurs</a> et
+						aux <a href="#armee_archer">archers</a>.
+						Pour fonctionner, cet établi à besoin d'un <a href="#prof_craft">artisan</a> ainsi que de matière première. (bois, pierres, os ou carapaces).
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"r"</span>.</p>
+						<h4 id="etabli_siege">Atelier de siège</h4>
+						<p>
+						L'atelier de siège permet de créer des balistes et des catapultes.
+						L'établi a besoin de <a href="#matiere_prems_bois">bois</a> et d'un <a href="#prof_meca_ingenieur">ingénieur de siège</a> ("Siege Engineering").
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"s"</span>.</p>
+						<h4 id="etabli_meca">Etabli du mécanicien</h4>
+						<p>
+						Cet établi permet de fabriquer des mécanismes utile pour toute sorte de machines et pièges.
+						Peut aussi créer des banc de traction utile pour l'<a href="#zone_hopital">hôpital</a>. L'établi du mécanicien a besoin absolument de <a href="#matiere_prems_pierre">pierre</a> pour créer
+						les mécanisme ainsi que d'un <a href="#prof_meca_mecanicien">mécanicien</a>.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"t"</span>.</p>
+						<h4 id="etabli_distillerie">Distillerie</h4>
+						<p>
+						Atelier très important dans Dwarf Fortress.
+						Il permettra aux nains de distiller leur propre bière ce qui est une meilleure alternative à l'<a href="#besoin_eau">eau</a>.
+						Pour fonctionner, cet établi aura besoin d'un <a href="#prof_ferme_brasseur">brasseur</a> et de plant convertible en <a href="#matiere_fini_alcool">alcool</a>.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"l"</span>.</p>
+						<h4 id="etabli_fermier">Atelier du fermier</h4>
+						<p>
+						L'atelier du fermier permet de traiter des plantes, de tondre la laine des animaux, de traire le lait et de faire du fromage depuis ce lait.
+						Pour fonctionner, cet établi aura besoin d'un <a href="#prof_ferme_fermier">fermier</a> et de <a href="#matiere_prems_plante">plantes</a>, d'<a href="#matiere_prems_animaux">animaux</a> à
+						poils longs ou de femelles à traire.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"w"</span>.</p>
+						<h4 id="etabli_cuisine">Cuisine</h4>
+						<p>
+						La cuisine est l'un des établis essentiels de votre forteresse.
+						Elle permet de confectionner la <a href="#matiere_fini_nourriture">nourriture</a> de votre forteresse. Pour fonctionner, elle a besoin d'un cuisinier et de victuaille à préparer
+						(<a href="#matiere_prems_plante">plantes</a> cueillie ou cultivée, <a href="#matiere_inter_viande">viande</a> depuis la <a href="#etabli_boucherie">boucherie</a>,
+						poisson depuis la <a href="#etabli_poissonnerie">poissonnerie</a>).
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"z"</span>.</p>
+						<h4 id="etabli_poissonnerie">Poissonnerie</h4>
+						<p>
+						La poissonnerie permet de travailler le poisson qui a été pêché.
+						Elle a besoin de <a href="#prof_peche_pecheur">pêcheur</a> et de poissons pour fonctionner.<br>
+						Le pêcheur ne pourra pêcher que dans des points d'eau poissonneux.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"h"</span>.</p>
+						<h4 id="etabli_potasse">Fabrique de potasse</h4>
+						<p>
+						La fabrique de potasse permet de fabriquer des <a href="#matiere_inter_potasse">potasses</a> et de la soude depuis les <a href="#">cendres</a>.
+						Elle a besoin d'un "<a href="#prof_ferme_potasse">Potash Maker</a>".
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"y"</span>.</p>
+						<h4 id="etabli_teinture">Teinturerie</h4>
+						<p>
+						Cet établi permet de colorer des <a href="#matiere_fini_vetement">vêtements</a>/<a href="#matiere_inter_etoffe">tissus</a>.
+						Nous devons d'abord avoir un tonneau vide avant de pouvoir créer la teinturerie.
+						Pour fonctionner, elle a besoin d'un <a href="#prof_ferme_teinturier">teinturier</a>, de vêtements/tissus et de teinture.
+						</p>
+						<p>
+						La couleur de la teinture dépendra de la plante. Il existe 4 plantes connues pour la teinture: "Dimple cup", "Blade weed", "Hide root" et "Silver barb".
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"d"</span>.</p>
+						<h4 id="etabli_savon">Etabli du confectionneur de savon</h4>
+						<p>
+						Cet établi permet de confectionner des savons.
+						Pour créer cet atelier, on a besoin d'un seau.
+						L'établi a besoin de la compétence "<a href="#prof_ferme_savon">Soap Making</a>" d'activer et a besoin de suif ("tallow") ou de soute ("lye").
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"S"</span>.</p>
+						<h4 id="etabli_presse">Presse à vis</h4>
+						<p>
+						???
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"p"</span>.</p>
+						<h3 id="prod_fourneaux">Fourneaux</h3>
+						<p>
+							Les fourneaux sont aussi un éléments importants à connaître si on veut progresser dans Dwarf Fortress.
+							Pour afficher le menu des fourneaux, appuyez sur <span class="touche">"b"</span> depuis le menu principal puis sur <span class="touche">"e"</span>.<br>
+							Il existe 4 fourneaux dans le jeu : le <a href="#four_bois">four à bois</a>, la <a href="#four_fonderie">fonderie</a>, le <a href="#four_verre">four à verre</a> et
+							le <a href="#four_poterie">four à céramique</a>.
+						</p>
+						<p class="image_centre"><a href="image/fourneaux.png" target="blank"><img src="image/fourneaux.png" width="150" height="150" alt="Photo d'article"></a></p>
+						<h4 id="four_bois">Le four à bois ("Wood furnace")</h4>
+						<p>
+							Permet de transformer le <a href="#matiere_prems_bois">bois</a> en <a href="#matiere_inter_charbon">charbon ou en cendre</a>. Le charbon produit servira de combustible pour les autres fours.
+							Pour que le four puisse marcher, il vous faut un nain avec la compétence "<a href="#prof_ferme_bruleur">Wood Burning</a>" d'activée ainsi que du bois comme matière première.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"w"</span>.</p>
+						<h4 id="four_fonderie">La fonderie ("Smelter")</h4>
+						<p>
+							Permet de transformer les <a href="#matiere_prems_minerai">minerais</a> bruts en <a href="#matiere_inter_barre">barres de métaux</a> utilisable pour la création d'arme et d'amure.
+							Pour que le four fonctionne il vous faut du minerai, du <a href="#matiere_inter_charbon">charbon</a> et un nain avec la compétence "<a href="#prof_metal_fourneaux">Furnace operator</a>" d'activée.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"s"</span>.</p>
+						<h4 id="four_verre">Le four à verre ("Glass furnace")</h4>
+						<p>
+							Permet de transformer le <a href="#matiere_prems_sable">sable</a> en <a href="#matiere_fini_verre">verre</a> brut.
+							Pour fonctionner, il a besoin de <a href="#matiere_inter_charbon">charbon</a>, de sable et d'un nain avec la compétence "<a href="#prof_metal_fourneaux">Furnace operator</a>" d'activée.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"g"</span>.</p>
+						<h4 id="four_poterie">Le four à céramique ("Kiln")</h4>
+						<p>
+							Permet de transformer l'<a href="#matiere_prems_argile">argile</a> en <a href="#matiere_fini_poterie">poterie</a> ou en céramique. Peut aussi transformer la potasse en pearlash.
+							Pour fonctionner, il a besoin de <a href="#matiere_inter_charbon">charbon</a>, d'argile et d'un nain avec la compétence "<a href="#prof_metal_fourneaux">Furnace operator</a>" d'activée.
+						</p>
+						<p>Appuyez sur la touche <span class="touche">"k"</span>.</p>
+						<h3 id="prod_job">Professions</h3>
+						<p>
+							Les nains peuvent faire n'importe quel métier à partir du moment où il a la compétence d'activée.
+							Les travaux sont regroupés par catégories. Pour voir ces catégories, approchez-vous d'un nain en ayant appuyé sur la touche <span class="touche">"v"</span>,
+							puis appuyez sur <span class="touche">"p"</span> et sur <span class="touche">"l"</span>. Vous arriverez dans la liste des catégories de jobs possibles pour les nains.
+							Pour naviguez dans la liste appuyez sur <span class="touche">"+"</span> ou <span class="touche">"-"</span> puis sur Enter pour entrer dans la catégorie.
+						</p>
+						<p class="image_centre"><a href="image/jobs.png" target="blank"><img src="image/jobs.png" width="150" height="150" alt="Photo d'article"></a></p>
+						<p>
+							Plus un nain travaillera dans un job précis plus il augmentera son niveau de maîtrise.<br>
+							Il existe plusieurs niveaux de maîtrise : Amateur ("Dabbling"), Novice ("Novice"), Adéquat ("Adequate"),
+							compétent ("Competent"), Qualifié ("Skilled"), Efficace ("Proficient"), Doué ("Talented"), Versé ("Adept"),
+							Expert ("Expert"), Professionelle ("Professional"), Accompli ("Accomplished"), Génial ("Great"), Maître ("Master"),
+							Haut Maître ("High Master"), Grand Maître ("Grand Master"), Légendaire ("Legendary").
+						</p>
+						<p>
+							La liste des catégories :
+						</p>
+						<ul>
+							<li><a href="#prof_minage">Mining</a></li>
+							<li><a href="#prof_bois">Woodworking</a></li>
+							<li><a href="#prof_pierre">Stoneworking</a></li>
+							<li><a href="#prof_chasse">Hunting/related</a></li>
+							<li><a href="#prof_soin">Healthcare</a></li>
+							<li><a href="#prof_ferme">Farming/related</a></li>
+							<li><a href="#prof_peche">Fishing/related</a></li>
+							<li><a href="#prof_metal">Metalsmithing</a></li>
+							<li><a href="#prof_joaillerie">Jewelry</a></li>
+							<li><a href="#prof_craft">Crafts</a></li>
+							<li><a href="#prof_meca">Engineering</a></li>
+							<li><a href="#prof_hauling">Hauling</a></li>
+							<li><a href="#prof_divers">Other jobs</a></li>
+						</ul>
+						<h4 id="prof_minage">Mining</h4>
+						<p>
+							Permet d'obtenir des mineurs. Les mineurs sont importants pour votre forteresse.
+							Ils permettent de creuser des tunnels ou des canaux. L'activité de minage générera de la <a href="#matiere_prems_pierre">pierre</a>,
+							des <a href="#matiere_prems_joyau">pierres précieuse</a> et du <a href="#matiere_prems_minerai">minerai</a>. Tout dépendra du sol sur lequel vous vous trouverez.
+						</p>
+						<p>
+							Pour donner l'ordre de creuser, appuyez sur <span class="touche">"d"</span> depuis le menu principal puis encore sur <span class="touche">"d"</span> , ensuite vous n'aurez qu'à choisir la zone à creuser.
+							Pour creuser un canal, vous remplacerez le second <span class="touche">"d"</span> par un <span class="touche">"h"</span>.
+						</p>
+						<p>
+							Le mineur a besoin d'une pioche ("pick") pour travailler.
+						</p>
+						<h4 id="prof_bois">Woodworking</h4>
+						<p>
+							Tout ce qui concerne le travail du <a href="#matiere_prems_bois">bois</a>.
+						</p>
+						<!--tableau woodwoking-->
+						<table>
+							<tr>
+								<td id="prof_bois_bucheron">
+									<h5>Wood cutting</h5>
+								</td>
+								<td>
+									<p>Choisir "Wood Cutting" pour un nain permet à celui-ci de devenir bûcheron.
+									Pour que le bûcheron puisse couper des arbres, il nous faudra sélectionner les arbres à couper.
+									De ces arbres, nous génèrerons du <a href="#matiere_prems_bois">bois</a> pour la construction depuis <a href="#etabli_charpentier">l'atelier du charpentier</a>.<br>
+									Le nain a besoin d'une hache pour travailler.</p>
+								</td>
+							</tr>
+							<tr>
+								<td id="prof_bois_arc">
+									<h5>Bow Making</h5>
+								</td>
+								<td>
+									<p>Permet à un nain de construire des arcs depuis le "Bowyer's Workshop".<br>
+									Attention, même si ce travail est repris depuis le woodworking, il vous sera possible de créer aussi des arc en <a href="#matiere_inter_viande">os</a>.</p>
+								</td>
+							</tr>
+							<tr>
+								<td id="prof_bois_charpentier">
+									<h5>Carpentry</h5>
+								</td>
+								<td>
+									<p>Permet au nain d'utiliser le "Carpenter's Workshop" et de créer des objets en bois.<br>
+									Dans les versions précédentes, le charpentier servait à construire des murs et des sols en <a href="#matiere_prems_bois">bois</a> mais ils ont perdu cette fonction dans la nouvelle version.
+									La raison en est simple, le fait de devoir construire ces murs et sols ralentissait la production de l'<a href="#etabli_charpentier">atelier du charpentier</a>.</p>
+								</td>
+							</tr>
+						</table>
+						<!--fin du tableau-->
+						<h4 id="prof_pierre">Stoneworking</h4>
+						<p>
+							Tout ce qui concerne le travail de la <a href="#matiere_prems_pierre">pierre</a>.
+						</p>
+						<!--début du tableau-->
+							<table>
+								<tr>
+									<td id="prof_pierre_macon">
+										<h5>Masonry</h5>
+									</td>
+									<td>
+										<p>
+											Permet au nain d'utiliser le "Mason's Workshop" et de créer des objets en pierre.<br>
+											C'est dans cet atelier que sont notamment construites les pierres tombales, les <a href="#etabli_meule">meules</a> ou les <a href="#etabli_moulin_bras">moulin à bras</a>.
+											Dans les versions précédentes, le charpentier servait à construire des murs et des sols en <a href="#matiere_prems_pierre">pierre</a> mais ils ont perdu cette fonction dans la nouvelle version.
+											La raison en est simple, le fait de devoir construire ces murs et sols ralentissait la production de l'<a href="#etabli_macon">atelier du maçon</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td >
+										<h5>Stone Detailing</h5>
+									</td>
+									<td>
+										<p>
+										Permet de lisser ou de graver des murs. Ne peut se faire que sur des murs de pierre naturels et non pas sur des murs construits.<br>
+										Lisser et graver des murs augmente la valeur d'une pièce.<br>
+										Les graveurs les plus expérimentés créerons de sublime fresques tirées des <a href="Tuto_legend.html">légendes</a> du monde.<br>
+										Les graveurs sont aussi d'utilisés pour graver les dalles funéraires.
+										</p>
+										<p>
+										Pour demander à un nain de lisser un mur, allez dans le menu designation (<span class="touche">"d"</span>) puis choisissez de lisser le mur avec <span class="touche">"s"</span>.
+										Pour graver, appuyez sur <span class="touche">"e"</span> à la place de <span class="touche">"s"</span>.
+										</p>
+									</td>
+								</tr>
+							</table>
+						<!--fin du tableau-->
+						<h4 id="prof_chasse">Hunting/related</h4>
+						<p>
+							Tout ce qui concerne les <a href="#matiere_prems_animaux">animaux</a>.
+						</p>
+						<!--début du tableau-->
+							<table>
+								<tr>
+									<td>
+										<h5>Animal Training</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain d'entraîner ou de domestiquer un animal sauvage.
+										</p>
+										<p>
+										Pour cela, vous aurez besoin d'une <a href="#zone_animaux">zone d'entraînement</a>.
+										</p>
+										<p>
+										Pour activer l'entraînement d'un animal, allez dans le menu Status (<span class="touche">"z"</span> depuis le menu principal).
+										Vous ouvrirez une nouvelle page avec des menu en haut. Choisissez le menu "Animals" et appuyez sur <span class="touche">"Enter"</span>.
+										Vous verrez alors la liste de tous les animaux de la forteresse.
+										Tous les animaux ne sont pas entraînables mais si certains le sont, vous aurez le choix de les entraîner soit pour la chasse soit pour la guerre.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Animal Care</h5>
+									</td>
+									<td>
+										<p>
+										Permet de nommer un nain vétérinaire. C'est celui qui guérit les <a href="#matiere_prems_animaux">animaux</a> blessés.
+										Dans les versions précédentes, ce métier n'était pas encore vraiment implémenté et était donc inutile (les animaux ne se soignaient pas)
+										et je ne sais pas si cela a été résolu dans	la nouvelle version.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="prof_chasse_chasseur">
+										<h5>Hunting</h5>
+									</td>
+									<td>
+										<p>
+										Permet de <a href="#besoin_chasse">chasser</a> au nain de chasser des animaux.
+										Le nain chassera au hasard des animaux de la carte et ramènera donc de la <a href="#matiere_inter_viande">viande</a> pour la <a href="#etabli_boucherie">boucherie</a>.
+										</p>
+										<p>
+										La chasse fait augmenter les aptitudes à l'<a href="#armee_attribut_archer">arc</a> et à l'<a href="#armee_attribut_marksdwarf">embuscade</a>.
+										</p>
+										<p>
+										Le chasseur a besoin d'un arc, d'un carquois et de flèche.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Trapping</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de chasser de petites créatures à l'aide de petits pièges. La créature sera ensuite domestiquée par le trappeur.<br>
+										Si les créatures sont trouvées par un autre nain avant, elle pourraient être mangées par celui-ci.
+										</p>
+										<p>
+										Le trappeur a besoin de pièges pour travailler.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Small Animal Dissection</h5>
+									</td>
+									<td>
+										<p>
+										Permet d'extraire des produits de petits animaux décédés.
+										</p>
+									</td>
+								</tr>
+							</table>
+						<!--fin du tableau-->
+						<h4 id="prof_soin">Healthcare</h4>
+						<p>
+							Tout ce qui concerne le soin.<br>
+							Soigner un nain nécessitera un <a href="#zone_hopital">hôpital</a>.
+						</p>
+						<!--début du tableau-->
+							<table>
+								<tr>
+									<td>
+										<h5>Diagnosis</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de décider quels soins apporter à un nain blessé.
+										Ce sera le premier nain à voir le nain blessé avant que les autres s'occupe de lui.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Surgery</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de soigner les dégâts causés aux organes internes.
+										C'est le chirurgien.
+										</p>
+										<p>
+										A besoin d'un banc de traction dans l’hôpital pour travailler.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Setting Bones</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de soigner les fractures.
+										</p>
+										<p>
+										A besoin d'un banc de traction dans l’hôpital pour travailler.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Suturing</h5>
+									</td>
+									<td>
+										<p>
+										Permet au nain de refermer les blessures avec du <a href="#matiere_inter_etoffe">fil</a>.
+										</p>
+										<p>
+										A besoin de bobines de fil dans l'hôpital.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Dressing Wounds</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de panser les plaies d'un autre.
+										</p>
+										<p>
+										A besoin de <a href="#matiere_inter_etoffe">tissus</a> dans l'hôpital.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Feed Patients/Prisoners</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de nourrir un nain qui ne peut pas le faire par lui même.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Recovering Wounded</h5>
+									</td>
+									<td>
+										<p>
+										???
+										</p>
+									</td>
+								</tr>
+							</table>
+						<!--fin du tableau-->
+						
+						<h4 id="prof_ferme">Farming/Related</h4>
+						<p>
+							Tout ce qui concerne les activités des <a href="#besoin_agri">fermes</a>.
+						</p>
+						<!--début du tableau-->
+							<table>
+								<tr>
+									<td id="prof_ferme_boucher">
+										<h5>Butchery</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de devenir boucher et d'extraire <a href="#matiere_inter_viande">la viande et les os</a> des carcasses depuis la <a href="#etabli_boucherie">boucherie</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="prof_ferme_tanneur">
+										<h5>Tanning</h5>
+									</td>
+									<td>
+										<p>
+										Permet de transformer les peaux en cuir depuis la <a href="#etabli_tannerie">tannerie</a>.
+										Le style du cuir dépendra de la peau de l'animal tué.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="prof_ferme_fermier">
+										<h5>Farming (Fields)</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de cultiver la terre. Voir l'<a href="#besoin_agri">agriculture</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="prof_ferme_teinturier">
+										<h5>Dyeing</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de teindre des <a href="#matiere_fini_vetement">vêtements</a> ou des <a href="#matiere_inter_etoffe">tissus</a> depuis la <a href="#etabli_teinture">teinturerie</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="prof_ferme_savon">
+										<h5>Soap Making</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de créer du savon. Pour créer du savon, le nain aura besoin de suif et de soude.
+										Le savon permettra aux nains de se laver.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="prof_ferme_bruleur">
+										<h5>Wood Burning</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de créer du charbon et de la cendre depuis le <a href="#four_bois">four à bois</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="prof_ferme_potasse">
+										<h5>Potash Making</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de créer de la <a href="#matiere_inter_potasse">potasse</a> depuis la <a href="#etabli_potasse">fabrique de potasse</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Lye Making</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de fabriquer de la soude.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="prof_ferme_meunier">
+										<h5>Milling</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de moudre du grain depuis le <a href="#etabli_moulin_bras">moulin à bras</a> ou la <a href="#etabli_meule">meule</a> et d'en faire de la farine.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="prof_ferme_brasseur">
+										<h5>Brewing</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de devenir brasseur et de créer de l'<a href="#matiere_fini_alcool">alcool</a> depuis la <a href="#etabli_distillerie">distillerie</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="prof_ferme_cueilleur">
+										<h5>Plant Gathering</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de <a href="#besoin_cueil">cueillir</a> des herbes utiles à la <a href="#etabli_cuisine">cuisines</a> et des graines qui serviront
+										pour l'<a href="#besoin_agri">agriculture</a> extérieure. Cela permet d'obtenir une source de nourriture bienvenue.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Plant Processing</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de transformer des <a href="#matiere_prems_plante">plantes</a> depuis l'<a href="#etabli_fermier">atelier du fermier</a>.
+										Nous avons quatre options possibles : transformer les plantes permettra de créer du <a href="#matiere_inter_etoffe">fil</a> depuis les "Pig Tails",
+										transformer les plantes (vers un sac) permettra de créer des feuilles de "Quarry Bush" depuis les "Quarry Bush",
+										transformer les plantes (vers un barril) permettra de créer du sirop nain ("Dwarven Syrup") depuis les "Sweet Pods",
+										transformer les plantes (vers un flacon) permet de transformer les "Valley Herb" en "Golden Salve".
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Cheese Making</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de créer du fromage depuis le lait à l'<a href="#etabli_fermier">atelier du fermier</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5 id="prof_ferme_lait">Milking</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de traire des <a href="#matiere_prems_animaux">animaux</a> pour obtenir du lait depuis l'<a href="#etabli_fermier">atelier du fermier</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Gelding</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de castrer des <a href="#matiere_prems_animaux">animaux</a> mâles.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Shearing</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de tondre des <a href="#matiere_prems_animaux">animaux</a> pour obtenir de la laine depuis l'<a href="#etabli_fermier">atelier du fermier</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Spinning</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de tisser des <a href="#matiere_inter_etoffe">fils</a> depuis la laine tondues. Se fait à l'<a href="#etabli_fermier">atelier du fermier</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="prof_ferme_cuisinier">
+										<h5>Cooking</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de cuisiner des plats depuis la <a href="#etabli_cuisine">cuisine</a>.<br>
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Pressing</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de presser de la pâte ou des rayons de miel pour obtenir du miel ou de la cire.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Beekeeping</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de s'occuper de ruches. Pour qu'il puisse travailler, il faudra placer une ruche ("hive") et avoir déjà des abeilles sur la cartes.
+										</p>
+									</td>
+								</tr>
+							</table>
+						<!--fin du tableau-->
+						<h4 id="prof_peche">Fishing/related</h4>
+						<p>
+							Tout ce qui concerne la <a href="#besoin_peche">pêche</a>.
+						</p>
+						<!--début du tableau-->
+							<table>
+								<tr>
+									<td id="prof_peche_pecheur">
+										<h5>Fishing</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de <a href="#besoin_peche">pêcher</a> là où il y a du poisson.
+										Les nains pêchent automatiquement dans les rivières mais il est possible d'affecter des <a href="#zone_peche">zones de pêches</a> précises.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Fish Cleaning</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de laver et de vider le poisson <a href="#besoin_peche">pêché</a> dans la <a href="#etabli_poissonnerie">poissonnerie</a> ce qui rend le poisson cuisinable.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Fish Dissection</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de disséquer un poisson pour en sortir des ressources depuis la <a href="#etabli_poissonnerie">poissonnerie</a>.
+										</p>
+									</td>
+								</tr>
+							</table>
+						<!--fin du tableau-->
+						<h4 id="prof_metal">Metalsmithing</h4>
+						<p>
+							Tout ce qui concerne la forge du métal.
+						</p>
+						<!--début du tableau-->
+							<table>
+								<tr>
+									<td id="prof_metal_fourneaux">
+										<h5>Furnace operating</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de manipuler les <a href="#prod_fourneaux">fourneaux</a> (mis à part le fourneau à bois qui a besoin d'un <a href="#prof_ferme_bruleur">"Wood Burner"</a>).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Weaponsmith</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de forger des <a href="#matiere_fini_arme_armure">armes</a> depuis la <a href="#etabli_forge">forge</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Armoring</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de forger des <a href="#matiere_fini_arme_armure">armures</a> depuis la <a href="#etabli_forge">forge</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Blacksmithing</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de forger toutes les fournitures (<a href="#matiere_fini_meuble">meubles</a> et autres objets) depuis la <a href="#etabli_forge">forge</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Metalcrafting</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de forger de petits objets en métaux depuis la <a href="#etabli_forge">forge</a>.
+										</p>
+									</td>
+								</tr>
+							</table>
+						<!--fin du tableau-->
+						<h4 id="prof_joaillerie">Jewelry</h4>
+						<p>
+							Tout ce qui concerne la taille de la <a href="#matiere_prems_joyau">pierres précieuses</a>.
+						</p>
+						<!--début du tableau-->
+							<table>
+								<tr>
+									<td>
+										<h5>Gem Cutting</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de tailler des <a href="#">pierres précieuses</a> brutes depuis la <a href="#etabli_joaillier">joaillerie</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Gem Setting</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain d'incruster des <a href="#">pierres précieuses</a> taillées dans un objet depuis la <a href="#etabli_joaillier">joaillerie</a>.
+										</p>
+									</td>
+								</tr>
+							</table>
+						<!--fin du tableau-->
+						<h4 id="prof_craft">Crafts</h4>
+						<p>
+							Tout ce qui concerne la création de petits objets et d'autre industrie.
+						</p>
+						<!--début du tableau-->
+							<table>
+								<tr>
+									<td>
+										<h5>Leatherworking</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de travailler le <a href="#matiere_inter_cuir">cuir</a> et de créer des objet avec dans la <a href="#etabli_maroquinerie">maroquinerie</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Woodcrafting</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de créer de petits objets en bois depuis l'<a href="#etabli_artisan">établi de l'artisan</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Stonecrafting</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de créer de petits objets en pierre depuis l'<a href="#etabli_artisan">établi de l'artisan</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Bone Carving</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de créer de petits objets en os depuis l'<a href="#etabli_artisan">établi de l'artisan</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Glassmaking</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de créer des objets (fournitures, craft,...) depuis le <a href="#four_verre">four à verre</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="prof_craft_weaving">
+										<h5>Weaving</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de tisser des <a href="#matiere_inter_etoffe">étoffes</a> depuis le <a href="#etabli_metier_tisser">métier à tisser</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="prof_craft_vetement">
+										<h5>Clothesmaking</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de confectionner des <a href="#matiere_fini_vetement">vêtements</a> depuis l'<a href="#etabli_tailleur">atelier du tailleur</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Strand Extraction</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de travailler sur de l'adamantium (l'adamantium est un métal qu'on trouve dans de très grandes profondeur).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Pottery</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de créer des objets en <a href="#matiere_prems_argile">argiles</a> depuis le <a href="#four_poterie">four à céramique</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Glazing</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de vernir des objets en <a href="#matiere_prems_argile">argile</a> ou en pierre depuis le <a href="#four_poterie">four à céramique</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Wax Working</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de travailler la cire.
+										</p>
+									</td>
+								</tr>
+							</table>
+						<!--fin du tableau-->
+						<h4 id="prof_meca">Engineering</h4>
+						<p>
+							Tout ce qui concerne les machines et mécanismes.
+						</p>
+						<!--début du tableau-->
+							<table>
+								<tr>
+									<td id="prof_meca_ingenieur">
+										<h5>Siege Engineering</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de créer des engins de siège depuis l'<a href="#etabli_siege">atelier de siège</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Siege Operating</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de manipuler des engins de siège.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="prof_meca_mecanicien">
+										<h5>Mechanics</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de créer des mécanismes depuis l'<a href="#etabli_meca">établi du mécanicien</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Pump Operating</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de manipuler des pompes manuellement.
+										</p>
+									</td>
+								</tr>
+							</table>
+						<!--fin du tableau-->
+						<h4 id="prof_hauling">Hauling</h4>
+						<p>
+							Tout ce qui concerne le transport.
+							Nous avons ici tous les ordres qui concernent le transport de marchandises.
+							("Stone Hauling", "Wood Hauling", "Item Hauling", "Food Hauling", "Furniture Hauling", "Animal Hauling").
+						</p>
+						<p>
+							Nous avons aussi d'autres ordres qu'on peut donner à nos nains:
+						</p>
+						<h5>Burial</h5>
+						<p>
+							Permet à un nain de transporter les corps des nains morts.
+						</p>
+						<h5>Refuse Hauling</h5>
+						<p>
+							Permet à un nain de ramasser les déchets.
+						</p>
+						<h5>Trade Good Hauling</h5>
+						<p>
+							Permet à un nain de déplacer les marchandises qui vont ou qui viennent du dépôt de commerce ("Trade Depot").
+						</p>
+						<h5>Water Hauling</h5>
+						<p>
+							Permet à un nain de déplacer l'eau nécessaire à la survie des blessés.
+						</p>
+						<h5>Push/Haul Vehicles</h5>
+						<p>
+							Permet à un nain de pousser ou tirer des véhicules.
+						</p>
+						<h4 id="prof_divers">Other Jobs</h4>
+						<p>
+							Tout ce qui concerne les métiers divers.
+						</p>
+						<!--début du tableau-->
+							<table>
+								<tr>
+									<td>
+										<h5>Architecture</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de devenir architecte. L'architecture est nécessaire pour certaines construction.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Alchemy</h5>
+									</td>
+									<td>
+										<p>
+										L'alchimie servait, dans les versions précédentes, à la création du savon. Ce qui n'est plus le cas maintenant.
+										L'alchimie a été maintenue pour d'autres futures utilisations (lesquelles?).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Lever Operating</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de manipuler les leviers.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Road Building</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de construire des routes
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Wall/Floor Building</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain de construire des murs et des sols.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Construction Removal</h5>
+									</td>
+									<td>
+										<p>
+										Permet à un nain d'enlever des construction.
+										</p>
+									</td>
+								</tr>
+							</table>
+						<!--fin du tableau-->
+						<h3 id="prod_prod">Production</h3>
+						<p>
+							Nous pouvons amasser/confectionner pas mal de choses. Voici un petit aperçu des produits que vous pourrez trouver dans Dwarf Fortress.
+							Tous ne sont pas cités, il en reste pas mal que nous n'avons pas cité et qu'il vous faudra découvrir par vous même pendant le jeu.
+						</p>
+						<p class="image_centre"><a href="image/produits.png" target="blank"><img src="image/produits.png" width="150" height="150" alt="Photo d'article"></a></p>
+						<ul class="liste_image">
+							<li><a href="#matiere_prems">Matières premières</a></li>
+							<li><a href="#matiere_inter">Produits intermédiaires</a></li>
+							<li><a href="#matiere_fini">Produits finis</a></li>
+						</ul>
+						<h4 id="matiere_prems">Matières premières</h4>
+						<!--début du tableau-->
+							<table>
+								<tr>
+									<td id="matiere_prems_bois">
+										<h5>Bois</h5>
+									</td>
+									<td>
+										<p>
+										Pour obtenir du bois, vous devrez choisir les arbres que les <a href="#prof_bois_bucheron">bûcherons</a> devront couper.
+										Pour cela allez dans le menu designation depuis le menu principal(<span class="touche">"d"</span>) puis appuyez sur <span class="touche">"t"</span> et choisissez la zone d'arbre que vous voulez couper.
+										</p>
+										<p>
+										Avec la version 0,4 du jeu, les arbres se sont complexifies. Se faisant, nous ne pouvons pas couper les arbres n'importe comment
+										mais au pied de l'arbre sous peine de voir une avalanche de branche s'abattre sur le pauvre malheureux.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_prems_pierre">
+										<h5 >Pierres</h5>
+									</td>
+									<td>
+										<p>
+										La pierre s'obtient en creusant le sol avec vos <a href="#prof_minage">mineurs</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_prems_joyau">
+										<h5>Pierres précieuses brut</h5>
+									</td>
+									<td>
+										<p>
+										Les pierres précieuses s'obtiennent aussi en créant le sol avec vos <a href="#prof_minage">mineurs</a>.
+										Il vous est possible de vérifier si un mur contient des pierres précieuses en appuyant sur <span class="touche">"k"</span> depuis le menu principal.
+										Approchez-vous ensuite de la zone que vous voulez regarder avec votre curseur.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_prems_minerai">
+										<h5>Minerais</h5>
+									</td>
+									<td>
+										<p>
+										Le minerai s'obtient aussi en créant le sol avec vos <a href="#prof_minage">mineurs</a>.
+										Il vous est possible de vérifier si un mur contient du minerai en appuyant sur <span class="touche">"k"</span> depuis le menu principal.
+										Approchez-vous ensuite de la zone que vous voulez regarder avec votre curseur.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_prems_argile">
+										<h5>Argiles</h5>
+									</td>
+									<td>
+										<p>
+										L'argile s'obtient sur les sols argileux. Créez une zone de récupération de l'argile.
+										Donnez l'ordre à vos nains de chercher l'argile depuis le <a href="#four_poterie">four à céramique</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_prems_sable">
+										<h5>Sables</h5>
+									</td>
+									<td>
+										<p>
+										Le sable s'obtient sur les sols sablonneux. Créez une zone de récupération du sable.
+										Vos nains iront chercher le sable dans la zone mais pour cela, ils auront besoin de sacs.
+										Pour donner l'ordre de récolter du sable, vous devrez le faire depuis le <a href="#four_verre">four à verre</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_prems_animaux">
+										<h5>Animaux</h5>
+									</td>
+									<td>
+										<p>
+										Il y a plusieurs façon d'obtenir un animal.
+										Soit vous en obtenez avec vos les migrants, soit vous les achetez aux marchands, soit vous les capturez et les domestiquez vous-même.
+										</p>
+										<p>
+										Attention, certains animaux sont herbivores et ont donc besoin de manger de l'herbe pour survivre.
+										Pour cela, il faut les envoyer dans un <a href="#zone_paturage">pâturage</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_prems_plante">
+										<h5>Plantes et fruits</h5>
+									</td>
+									<td>
+										<p>
+										Les plantes se récoltent via le menu désignation (<span class="touche">"d"</span> puis <span class="touche">"p"</span>).
+										On peut aussi les cultiver.
+										</p>
+										<p>
+										Les fruits se ramassent depuis les <a href="#zone_fruit">zones de ramassages des fruits</a>.
+										</p>
+									</td>
+								</tr>
+							</table>
+						<!--fin du tableau-->
+						<h4 id="matiere_inter">Produits intermédiaires</h4>
+						<!--début du tableau-->
+							<table>
+								<tr>
+									<td id="matiere_inter_barre">
+										<h5>Barre de métal</h5>
+									</td>
+									<td>
+										<p>
+										La barre de métal se créé avec le <a href="#matiere_prems_minerai">minerai</a> récolté.
+										Il nous faut utiliser la <a href="#four_fonderie">fonderie</a> avec un <a href="#prod_fourneaux">opérateur de fourneaux</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_inter_charbon">
+										<h5>Charbon et cendre</h5>
+									</td>
+									<td>
+										<p>
+										Le charbon et la cendre se créent avec le <a href="#matiere_prems_bois">bois récolté</a>.
+										Il nous faut utiliser le <a href="#four_bois">four à bois</a> avec un <a href="#prof_ferme_bruleur">bruleur de bois</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_inter_viande">
+										<h5>Viande crue, os et peaux</h5>
+									</td>
+									<td>
+										<p>
+										Pour obtenir la viande crue, les os et la peau, il nous faut utilisé les carcasses d'animaux dans la <a href="#etabli_boucherie">boucherie</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_inter_potasse">
+										<h5>Potasse</h5>
+									</td>
+									<td>
+										<p>
+										La potasse est créée depuis la <a href="#etabli_potasse">fabrique de potasse</a> avec de la <a href="#matiere_inter_charbon">cendre</a> ou de la soude.<br>
+										Elle peut être utilisée à créée de la pearlash ou pour fertiliser les <a href="#besoin_agri">champ</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Pearlash</h5>
+									</td>
+									<td>
+										<p>
+										Pour faire de la pearlash vous devrez cuire de la potasse dans le four en céramique.
+										La pearlash sert notamment à créé du Crystal et du verre blanc.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_inter_etoffe">
+										<h5>Fils et étoffe</h5>
+									</td>
+									<td>
+										<p>
+										Pour créer des fils vous devrez soit traiter des plantes soit tisser de la laine.<br>
+										Pour obtenir des étoffes, vous devrez les créer depuis le <a href="#etabli_metier_tisser">métier à tisser</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_inter_cuir">
+										<h5>Cuir</h5>
+									</td>
+									<td>
+										<p>
+										Le cuir se créé depuis les peaux enlevée sur les cadavres. Il faut utiliser la tannerie pour l'obtenir.
+										</p>
+									</td>
+								</tr>
+							</table>
+						<!--fin du tableau-->
+						<h4 id="matiere_fini">Produits finis</h4>
+						<!--début du tableau-->
+							<table>
+								<tr>
+									<td id="matiere_fini_meuble">
+										<h5>Meuble</h5>
+									</td>
+									<td>
+										<p>
+										Eléments de mobilier, sont surtout créé depuis l'établi de charpentier mais peut être aussi créés en métaux depuis la forge
+										ou en verre depuis le l'<a href="#four_verre">four à verre</a>.<br>
+										Attention, seuls le lit ne pourra pas se faire ailleurs que dans l'établi de charpentier.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Crafts</h5>
+									</td>
+									<td>
+										<p>
+										Les crafts sont surtout créé depuis l'atelier de l'artisan mais on peut aussi en créé ailleurs dans d'autres matière ailleurs.
+										(par exemple dans le <a href="#four_poterie">four à céramique</a> pour les craft en poterie).
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h5>Gemme taillée</h5>
+									</td>
+									<td>
+										<p>
+										Les gemmes taillées sont des pierres précieuses qui ont été taillées à la <a href="#etabli_joaillier">joaillerie</a>.
+										Elle peuvent être incrustées dans des objets pour en augmenter la valeur.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_fini_nourriture">
+										<h5>Nourriture</h5>
+									</td>
+									<td>
+										<p>
+										La nourriture est créée dans la <a href="#">cuisine</a> depuis la <a href="#">viande</a>, les oeufs, le miel, <a href="#">les fruits et les plantes</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_fini_alcool">
+										<h5>L'alcool</h5>
+									</td>
+									<td>
+										<p>
+										L'alcool est créée depuis la brasserie avec des plantes ou des fruits. De la plante utilisée dépendra le type d'alcool.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_fini_arme_armure">
+										<h5>Armes, armures et munitions</h5>
+									</td>
+									<td>
+										<p>
+										Les armes et armures sont pour la plupart créée depuis la forge avec des barres de métaux. <br>
+										L'établi de charpentier permet de faire des boucliers de bois ainsi que des armes d'entraînement.<br>
+										Il est aussi possible de faire des armure en <a href="#matiere_inter_cuir">cuir</a> depuis la <a href="#etabli_maroquinerie">maroquinerie</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_fini_vetement">
+										<h5>Vêtements</h5>
+									</td>
+									<td>
+										<p>
+										Nous pouvons créer toute sorte de vêtement.
+										La plupart des vêtements se feront chez le <a href="#prof_craft_vetement">tailleur</a> mais ceux en <a href="#matiere_inter_cuir">cuir</a> se feront plutôt à la <a href="#etabli_maroquinerie">maroquinerie</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_fini_poterie">
+										<h5>Poterie</h5>
+									</td>
+									<td>
+										<p>
+										Les objets en poterie se font depuis le <a href="#four_poterie">four à céramique</a> avec de l'<a href="#matiere_prems_argile">argile</a>.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td id="matiere_fini_verre">
+										<h5>Verre</h5>
+									</td>
+									<td>
+										<p>
+										Les objets en verre se font avec du <a href="#matiere_prems_sable">sable</a> depuis le <a href="#four_verre">four à verre</a>.
+										Il existe quelques sorte de verre. Le crystal et le verre blanc se font depuis de la pearlash.
+										</p>
+									</td>
+								</tr>
+							</table>
+						<!--fin du tableau-->
+						<h3 id="prod_manager">Semi-automatision de la production</h3>
+						<p>
+							Nous pouvons automatiser au maximum la production avec un manager.
+							La production ne sera pas totalement automatisée mais nous pourrons prévoir longtemps à l'avance ce que les ateliers fabriqueront.
+						</p>
+						<p>
+							Pour promouvoir un manager, aller dans le menu des nobles (<span class="touche">"n"</span> depuis le menu principal) et choisissez quel nain sera votre manager.
+						</p>
+						<p>
+							Pour donner un ordre de management, aller dans le menu des unité (<span class="touche">"u"</span> depuis le menu principal) puis appuyez sur <span class="touche">"m"</span>.
+							Vous arriverez dans un autre menu.<br>
+							Appuyez sur <span class="touche">"q"</span> pour ajouter un ordre.
+							Vous pourrez ensuite choisir tout un tas d'ordre depuis la liste qui s'est affichée.
+							La liste est énorme mais il est possible de filtrer le résultat en tapant ce que vous recherchez au clavier.
+						</p>
+						<p>
+							Attention, pour travailler, le manager a besoin d'un bureau à lui.
+						</p>
+						<h3 id="prod_inventaire">Inventaire de la production</h3>
+						<p>
+							Vous pouvez voir ce que vous avez comme production dans votre forteresse en promouvant un comptable ("Bookkeeper") depuis le menu des nobles.
+						</p>
+						<p>
+							Vous pouvez paramétrer la façon dont votre comptable va compter la marchandise.<br>
+							Pour cela, quand vous êtes dans le menu des nobles, mettez vous sur le comptable et appuyez sur <span class="touche">"s"</span>.
+							Vous aurez alors le choix entre plusieurs niveaux de précision: "lowest precision", "low precision", "medium precision",
+							"High precision" et "highest precision".
+						</p>
+						<p>
+							Attention, pour travailler, le comptable a besoin d'un bureau à lui.
+						</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a> <a href="#forteresse_prod">Revenir au début de l'article</a></p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Article Besoin élémentaire-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo1.png" alt="" width="25" height="25">
+						<h2 id="besoin">Subvenir aux besoins élémentaires de vos nains</h2>
+					</header>
+					<p>
+						Vos nains auront des besoins qu'il vous faudra combler dès le début de votre aventure.
+						Les grandes priorité du début de partie seront de trouver des sources de <a href="#besoin_nourriture">nourriture</a>, de trouver de quoi <a href="#besoin_boisson">boire</a> et
+						de fournir à vos nains un endroit pour <a href="#besoin_lit">dormir</a>.
+					</p>
+					<p class="image_centre"><a href="image/puit.png" target="blank"><img src="image/puit.png" width="150" height="150" alt="Photo d'article"></a></p>
+					<h3 id="besoin_nourriture">Les besoins en nourriture</h3>
+					<p>
+						Il existe plusieurs moyens de procurer de la nourriture à vos nains:
+					</p>
+					<ul>
+						<li><a href="#besoin_peche">La pêche</a></li>
+						<li><a href="#besoin_chasse">La chasse</a></li>
+						<li><a href="#besoin_cueil">La cueillette</a></li>
+						<li><a href="#besoin_agri">L'agriculture</a></li>
+						<li><a href="#besoin_elevage">L'élevage</a></li>
+					</ul>
+					<h4 id="besoin_peche">La pêche</h4>
+					<p>
+						Pour pêcher, il vous faut d'abord avoir accés à un lieu riche en poisson.
+						Ce peut être une rivière, la mer, ou un lac souterrain.
+					</p>
+					<p>
+						Si vous avez accés à un endroit riche en poisson, vous pouvez décidez de sélectionner cet endroit comme <a href="#zone_peche">zone de pêche</a>.
+						De cette façon-là, un nain avec l'aptitude "Fishing" d'activée pourra pêcher dans la zone.
+					</p>
+					<p>
+						Mais pêcher ne suffit pas, il vous faudra aussi bâtir une <a href="#etabli_poissonnerie">poissonnerie</a>.
+						(appuyez sur <span class="touche">"b"</span> depuis le menu principal, puis sur <span class="touche">"w"</span> et enfin sur <span class="touche">"h"</span>). <br>
+						L'établi permettra à un nain capable de nettoyer et de disséquer le poisson ("Fish Cleaning" et "Fish Dissection") de préparer le poisson.
+					</p>
+					<h4 id="besoin_chasse">La chasse</h4>
+					<p>
+						Pour la chasse, vous aurez besoin de <a href="#prof_chasse_chasseur">chasseur</a>. Sélectionnez "Hunting" dans les aptitudes du nain sélectionner.<br>
+						Votre nain aura besoin pour la chasse d'un arc, de flèche et d'un carquois sous peine de ne pas pouvoir chasser.
+					</p>
+					<p>
+						Mais tuer une bête ne suffit pas, il faudra aussi préparer la viande. Pour cela vous aurez besoin d'une <a href="#etabli_boucherie">boucherie</a>
+						(appuyez sur <span class="touche">"b"</span> depuis le menu principal, puis sur <span class="touche">"w"</span> et enfin sur <span class="touche">"u"</span>) ainsi
+						que d'un nain avec l'aptitude du boucher. (Activer "Butchery" dans les aptitudes).
+					</p>
+					<h4 id="besoin_cueil">La cueillette</h4>
+					<p>
+						La cueillette est un moyen d'ajouter un peu plus de nourriture au menu.<br>
+						Pour cela vous aurez besoin d'un nain <a href="#prof_ferme_cueilleur">cueilleur</a>.<br>
+						Ensuite, ordonnez à vos nains de faire la ceuillette depuis le menu "Designation" (<span class="touche">"d"</span> dans le menu principal).<br>
+						Choisissez "Gather Plant" en appuyant sur <span class="touche">"p"</span>. Vous pouvez choisir la zone à cueillir en appuyant sur <span class="touche">"Enter"</span>,
+						en vous déplaçant et en rappuyant sur <span class="touche">"Enter"</span>.
+					</p>
+					<h4 id="besoin_agri">L'agriculture</h4>
+					<p>
+						Il existe 2 types d'agriculture.
+						L'agriculture de surface et l'agriculture souterraine.
+					</p>
+					<p>
+						Il existe 6 types de graines pour l'agriculture souterraine: "Plump Helmet", "Sweet Pod", "Quarry Bush", "Pig Tails", "Cave Wheat", "Dimple Cup".<br>
+						Pour planter ces graines, soit vous aurez un sol qui accepte d'être plantée soit vous devrez arroser le sol pour qu'il devienne arable.
+					</p>
+					<p>
+						Pour utiliser l'agriculture de surface, vous aurez besoin de graines récoltées lors de la <a href="#prof_ferme_cueilleur">cueillette</a> ou bien achetée à des marchands.
+						Il existe un très grand nombre de graines de surface.
+					</p>
+					<p>
+						Pour créer un champs, aller dans le menu "Building" en appuyant sur <span class="touche">"b"</span> puis appuyez sur <span class="touche">"p"</span>.<br>
+						Avec <span class="touche">"u"</span> vous pourrez augmenter la taille du champ verticalement.<br>
+						Avec <span class="touche">"m"</span> vous pourrez rétrécir la taille du champ verticalement.<br>
+						Avec <span class="touche">"k"</span> vous pourrez augmenter la taille du champ horizontalement.<br>
+						Avec <span class="touche">"h"</span> vous pourrez rétrécir la taille du champ horizontalement.
+					</p>
+					<p>
+						Vous aurez aussi besoin d'un nain capable de cultiver la terre. Choisissez l'aptitude <a href="#prof_ferme_fermier">"Farming (Field)"</a> dans l'aptitude de votre nain.
+					</p>
+					<p>
+						En appuyant sur <span class="touche">"q"</span> et en vous approchant d'un champ, vous pourrez choisir quel plante cultiver selon la saison.<br>
+						Certaines graines ne pourront être cultivées que pendant certaines saisons alors que d'autre pourront être plantées n'importe quand.
+					</p>
+					<h4 id="besoin_elevage">L'élevage</h4>
+					<p>
+						Nous pouvons utiliser l'élevage de plusieurs façon.<br>
+						Nous pouvons traire les femelle pour le lait, ramasser les oeufs de vos volailles, faire de l'apiculture, tuer vos bêtes pour leur <a href="#matiere_inter_viande">viande</a>.
+					</p>
+					<p>
+						Avant toute chose, il faut permettre à vos bêtes de survivre, pour cela vous devrez les faire paître dans des <a href="#zone_paturage">pâturages</a>.
+					</p>
+					<p>
+						Traire les femelles n'est pas si dur.
+						Il vous faut un <a href="#etabli_fermier">établi de fermier</a>, "Farmer's Workshop" (appuyez sur "b", "w" et "w").
+						Il vous faut aussi un nain avec l'aptitude <a href="#prof_ferme_lait">"Milking"</a> d'activé.
+					</p>
+					<p>
+						Ramasser les oeufs est plus ardu.<br>
+						Pour pouvoir le faire, il va vous falloir créer un nid. (A créer dans l'<a href="#etabli_artisan">atelier de l'artisan</a>).<br>
+						Il va vous falloir poser le nid prés des volailles.<br>
+						La cueillette des oeufs se fera automatiquement.
+					</p>
+					<p>
+						Pour l'apiculture, créez d'abord des ruche ("hive" en anglais) (A créer dans l'<a href="#etabli_artisan">atelier de l'artisan</a>) puis
+						placez-les là où vous voulez mettre vos ruche (<span class="touche">"b"</span> puis <span class="touche">"Alt + h"</span>).
+					</p>
+					<p>
+						Enfin, dernière technique pour obtenir de la nourriture de vos bêtes sera tout simplement de les tuer pour obtenir leurs viandes.<br>
+						Pour cela, appuyez sur <span class="touche">"v"</span> et approchez de l'animal que vous voulez tuer.<br>
+						Appuyez sur <span class="touche">"s"</span> pour la tuer.<br>
+						Un nain apportera votre bête vers la <a href="#etabli_boucherie">boucherie</a>.
+					</p>
+					<h3 id="besoin_boisson">Les besoins en boisson</h3>
+					<p>
+						Les nains peuvent boire de l'<a href="#besoin_eau">eau</a> mais préféreront boire de la <a href="#besoin_biere">bière</a> ou toute autres boissons alcoolisées.
+					</p>
+					<h4 id="besoin_eau">Trouver de l'eau</h4>
+					<p>
+						Si vous avez bien choisi votre zone de débarquement, il vous sera très facile d'avoir de l'eau.
+						Il vous suffira de créer une zone pour boire. (<span class="touche">"i"</span>, choisir la taille de la zone, puis <span class="touche">"w"</span>).<br>
+						Vous pouvez toujours construire un puit. Pour cela, il vous faut une ressource d'eau souterraine (soit un bassin que vous aurez créé vous même soit un aquifer).
+						Creusez un canal (<span class="touche">"d"</span> puis <span class="touche">"h"</span>).
+						Sur le trou créé, batissez le puit (<span class="touche">"b"</span> puis <span class="touche">"l"</span>).
+						Il vous faudra un bloc, un engrenage et un seau pour pouvoir le bâtir.
+					</p>
+					<p><a href="image/besoin.png" target="blank"><img src="image/besoin.png" width="150" height="150" alt="Photo d'article"></a></p>
+					<h4 id="besoin_biere">Obtenir de la bière</h4>
+					<p>
+						Il existe deux moyens d'obtenir de la bière. On peut soit l'acheter aux marchand soit la fabriquer nous même.<br>
+						Pour la fabriquer, il vous faudra planter des plantes (la plus courante étant le Plump Helmet).
+						Il vous faudra un nain <a href="#prof_ferme_brasseur">brasseur</a> ainsi qu'une <a href="#etabli_distillerie">distillerie</a>(<span class="touche">"b"</span> puis <span class="touche">"l"</span>).
+					</p>
+					<h3 id="besoin_lit"><a href="image/lits.png" target="blank"><img src="image/lits.png" width="150" height="150" alt="Photo d'article"></a>Fournir à vos nains un endroit où dormir</h3>
+					<p>
+						Au début, les nains n'ont pas de lit.<br>
+						Si pour certain ça ne pose pas problème, pour d'autre ça diminue leur moral.
+						Le moral d'un nain influant sur la façon dont il travaille, il sera nécessaire de créer des lits.<br>
+						Pour cela vous aurez besoin d'un <a href="#prof_bois_charpentier">établi de charpentier</a> (<span class="touche">"b"</span> puis <span class="touche">"w"</span> et <span class="touche">"c"</span>).
+						Appuyez sur <span class="touche">"q"</span> et approchez-vous de votre établi de charpentier.
+						Choisissez ensuite de construire un ou plusieurs lits.<br>
+						Une fois les lits créé, vous pourrez les sélectionner avec <span class="touche">"b"</span> puis <span class="touche">"b"</span>.<br>
+						Posez-les ensuite dans la pièce que vous aurez créé pour ça avec <span class="touche">"Enter"</span>.
+					</p>
+					<p>
+						Pour créer un dortoir, appuyez sur <span class="touche">"q"</span> et approchez-vous d'un lit.
+						Avec <span class="touche">"+"</span> ou <span class="touche">"-"</span>, modifiez la taille de la chambre.
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a> <a href="#besoin">Revenir au début de l'article</a></p>
+				</article>
+			<!--Fin de l'article-->
+			
+			<!--Article Armée-->
+				<article class="article">
+					<header>
+						<img src="image/img_logo9.png" alt="" width="25" height="25">
+						<h2 id="armee">Créer son armée</h2>
+					</header>
+					<p>
+						Créer une armée digne de ce nom est dur à réaliser dans Dwarf Fortress.
+						Les choses à savoir pour créer son armée :
+					</p>
+					<p class="image_centre"><a href="image/armee.png" target="blank"><img src="image/armee.png" width="150" height="150" alt="Photo d'article"></a></p>
+					<ul class="liste_image">
+						<li><a href="#armee_attribut">Attributs de combat</a></li>
+						<li><a href="#armee_commandant">Commandant de la milice et autres lieutenant</a></li>
+						<li><a href="#armee_escouade">Escouades</a></li>
+						<li><a href="#armee_horaire">Alertes et horaires</a></li>
+						<li><a href="#armee_baraquement">Baraquement</a></li>
+						<li><a href="#armee_entrainement">Entrainement</a></li>
+						<li><a href="#armee_escouade">Créer son propre type d'escouade</a></li>
+						<li><a href="#armee_defense">Défense d'une zone précise</a></li>
+						<li><a href="#armee_attaque">Attaque</a></li>
+						<li><a href="#armee_archer">Cas particulier : les archers</a></li>
+					</ul>
+					<h3 id="armee_attribut">Attributs de combat</h3>
+					<p>
+						Il existe différentes compétences militaires classée en deux catégorie:
+						Celles qui sont basée sur l'utilisation d'une pièce d'équipement particulière: macedwarf, speardwarf, swordsdwarf, hammerdwarf,
+						axedwarf, archer, wrestler, shield user, armor user.
+						Et celles basée sur une action: marksdwarf, dodger, striker, kicker, biter, fighter.
+					</p>
+					<h4>Macedwarf</h4>
+					<p>
+						Cette compétence montre que le nain maîtrise bien la masse d'arme. Cette compétence se gagne grâce à l'<a href="#armee_entrainement">entraînement</a>.<br>
+						Une masse d'arme peut être très utile contre des hordes de mort-vivant.
+					</p>
+					<h4>Speardwarf</h4>
+					<p>
+						Cette compétence montre que le nain maîtrise bien la lance. Cette compétence se gagne grâce à l'<a href="#armee_entrainement">entraînement</a>.
+					</p>
+					<h4>Swordsdwarf</h4>
+					<p>
+						Cette compétence montre que le nain maîtrise bien l'épée. Cette compétence se gagne grâce à l'<a href="#armee_entrainement">entraînement</a>.
+					</p>
+					<h4>Hammerdwarf</h4>
+					<p>
+						Cette compétence montre que le nain maîtrise bien le marteau de guerre. Cette compétence se gagne grâce à l'<a href="#armee_entrainement">entraînement</a>.
+					</p>
+					<h4>Axedwarf</h4>
+					<p>
+						Cette compétence montre que le nain maîtrise bien la hache de guerre. Cette compétence se gagne grâce à l'<a href="#armee_entrainement">entraînement</a>.<br>
+						Attention, si une hache est autant utilisée par les <a href="#prof_bois_bucheron">bûcherons</a> que par les "Axedwarf", une hache ne pourra être utilisée que par un bûcheron ou un soldat, pas par les deux.
+					</p>
+					<h4 id="armee_attribut_archer">Archer</h4>
+					<p>
+						Cette compétence montre que le nain maîtrise bien l'arc. Cette compétence se gagne grâce à l'<a href="#armee_entrainement">entraînement</a> et à la chasse.<br>
+						Tout comme la hache, un arc peut être utilisée par d'autre personne que les archers (les chasseur) mais il ne pourra pas être partagée entre les deux.
+					</p>
+					<h4>Wrestler</h4>
+					<p>
+						Le "wrestler" est le nain qui n'utilise pas d'arme. C'est le lutteur. Cette compétence se gagne grâce à l'<a href="#armee_entrainement">entraînement</a>.
+					</p>
+					<h4>Shield user</h4>
+					<p>
+						Cette compétence montre que le nain maîtrise bien l'utilisation du bouclier. Cela lui permet d'être en vie. Cette compétence se gagne grâce à l'<a href="#armee_entrainement">entraînement</a>.
+					</p>
+					<h4>Armor user</h4>
+					<p>
+						Cette compétence montre que le nain maîtrise bien l'utilisation de l'armure. Cela lui permet d'être en vie. Cette compétence se gagne grâce à l'<a href="#armee_entrainement">entraînement</a>.
+					</p>
+					<h4 id="armee_attribut_marksdwarf">Marksdwarf</h4>
+					<p>
+						Le "marksdwarf" est un bon traqueur. Il peut repérer des traces facilement. C'est une compétence qui se gagne facilement à la chasse.
+					</p>
+					<h4>Dodger</h4>
+					<p>
+						Cette compétence désigne la capacité d'esquive du nain. Cela permet au soldat de rester en vie. Cette compétence se gagne grâce à l'<a href="#armee_entrainement">entraînement</a>.
+					</p>
+					<h4>Striker</h4>
+					<p>
+						Cette compétence désigne la capacité du nain à donner des coups. Cette compétence se gagne grâce à l'<a href="#armee_entrainement">entraînement</a>.
+					</p>
+					<h4>Kicker</h4>
+					<p>
+						Cette compétence désigne la capacité du nain à donner des coups de pied. Cette compétence se gagne grâce à l'<a href="#armee_entrainement">entraînement</a>.
+					</p>
+					<h4>Biter</h4>
+					<p>
+						Cette compétence désigne la capacité du nain à mordre. Cette compétence se gagne grâce à l'<a href="#armee_entrainement">entraînement</a>.
+					</p>
+					<h4>Fighter</h4>
+					<p>
+						Cette compétence désigne la capacité du nain à se battre généralement. Cette compétence se gagne grâce à l'<a href="#armee_entrainement">entraînement</a>.
+					</p>
+					<h3 id="armee_commandant">Commandant de la milice et autres lieutenant</h3>
+					<p>
+						Sans commandant pas d'armée.<br>
+						Vous devrez promouvoir votre commandant pour pouvoir créer votre propre armée.
+						Pour cela, allez dans le menu "Nobles and Administrators" en appuyant sur la touche <span class="touche">"n"</span> depuis le menu principal.<br>
+						Avec <span class="touche">"Enter"</span> vous pourrez choisir votre commandant dans la liste de tous vos nains puis en rappuyant sur <span class="touche">"Enter"</span>, vous pourrez choisir le nain sélectionné.
+						Et hop, voici votre votre commandant.
+					</p>
+					<p>
+						Une fois le commandant choisi, retournez sur le menu des nobles. Vous verrez qu'une nouvelle ligne s'est ajoutée à la liste.<br>
+						Vous pouvez désormais choisir un "Militia captain". Choisissez-le comme vous avez choisi votre commandant.
+					</p>
+					<p>
+						Pour chaque lieutenant que vous aurez choisi, une autre ligne s'ajoutera dans la liste des nobles et vous pourrez choisir un autre capitaine.
+					</p>
+					<p>
+						Dans la liste des nobles, vous pourrez choisir aussi un shérif (celui-ci deviendra capitaine de la garde plus tard).
+						Le shérif fera techniquement partie de l'armée mais servira avant tout de policier dans la forteresse et arrêtera les criminels.
+					</p>
+					<h3 id="armee_escouade">Escouades</h3>
+					<p>
+						Maintenant que vous avez votre <a href="#armee_commandant">commandant</a>, vous pouvez créé vos escouades.
+					</p>
+					<p>
+						Pour cela, ouvrez le menu armée en appuyant sur <span class="touche">"m"</span> depuis le menu principal.<br>
+						La première fenêtre qui s'affichera sera celle des escouades.
+					</p>
+					<p class="image_centre"><a href="image/escouades.png" target="blank"><img src="image/escouades.png" width="150" height="150" alt="Photo d'article"></a></p>
+					<p>
+						Au début, vous n'avez pas d'escouades. Vous avez juste votre <a href="#armee_commandant">commandant</a> ainsi que les capitaines que vous aurez promus.<br>
+						Choisissez dans la liste quel sera le chef de l'escouade et appuyez sur <span class="touche">"c"</span> pour créer une nouvelle escouade.
+					</p>
+					<p>
+						Une nouvelle fenêtre s'ouvre dans laquelle nous pourrons choisir quel sera notre type d'escouade.
+						De base, nous n'avons pas beaucoup de type. Nous avons les armures de <a href="#matiere_inter_cuir">cuir</a>, les armures de métaux, les <a href="#armee_archer">archers</a> et les sans uniformes.
+						Nous verrons par la suite comment créer de nouveaux types d'escouades.
+					</p>
+					<p>
+						Une fois votre type choisi, le nom de l'escouade remplacera le nom du chef d'escouade.<br>
+						Deux autres colonne apparaîtront. La colonne du milieu représentera les membres de votre escouades.
+						Celle de droite sera tout simplement la liste des nains de votre citadelle.
+					</p>
+					<p>
+						Au début, l'escouade n'aura qu'un seul nom, celle de son chef.
+						Avec les touches directionnel gauche et droite, vous pourrez choisir la colonne.
+						Avec les touches directionnel haut et bas, vous pourrez naviguer dans la colonne en cours.
+					</p>
+					<p>
+						Quand vous choisissez un nain, vous pouvez voir au-dessus quels sont ses <a href="#armee_attribut">compétences militaires</a> et s'il appartient à une autre escouade.
+						Le fait qu'il appartienne à une autre escouade n'empêche pas du tout d'ajouter le nain à l'escouade en cours. Soyez donc prudents.
+					</p>
+					<h3 id="armee_horaire">Alertes et horaires</h3>
+					<p>
+						Pour l'armée, les alertes et horaires sont fortement liés.
+					</p>
+					<p>
+						Commençons d'abord par les alertes.<br>
+						Ouvrez le menu d'alerte avec la touche <span class="touche">"a"</span> depuis le menu des armées.
+					</p>
+					<p class="image_centre"><a href="image/horaire.png" target="blank"><img src="image/horaire.png" width="150" height="150" alt="Photo d'article"></a></p>
+					<p>
+						Le menu alerte s'ouvre. De base, vous n'avez que deux alertes disponibles : inactive et training (<a href="#armee_entrainement">entraînement</a> en français)<br>
+						Nous verront plus loin comment <a href="#armee_escouade">créer nos propres alertes</a>.
+					</p>
+					<p>
+						Dans ce menu, nous avons aussi 3 colonne.<br>
+						Celle de gauche contient toutes les alertes disponibles.
+						Celle du milieu contient la liste des escouades et celle de droite la liste des sanctuaires (ceux-ci ne seront pas visibles si vous n'en avez pas créé).
+					</p>
+					<p>
+						Dans la liste des alertes, vous pourrez voir que l'une des alerte a <span class="touche">[CIV]</span> en vert à côté.
+						Ce petit signe signifie que ce sera l'alerte d'application pour tous les civils.
+						Ceux-ci ne pourront circuler que dans les sanctuaires que vous aurez choisis.
+					</p>
+					<p>
+						Dans la liste du milieu, vous choisirez quelles escouades appliqueront l'alerte en cours.
+					</p>
+					<p>
+						Une fois les alertes choisies, dirigeons-nous vers le menu des horaires.
+						Appuyez sur <span class="touche">"s"</span> depuis le menu des armées (attention, pour pouvoir quitter le menu des horaires et revenir au menu armées vous devrez appuyez sur la touche <span class="touche">"Esc"</span>).
+					</p>
+					<p>
+						Ce menu sera divisé lui aussi en plusieurs colonnes. Tout à gauche, vous verrez les mois de l'année.
+						Les autres colonnes seront celles des escouades existantes. Ainsi vous pourrez choisir pour chaque mois l'action à effectuer.
+						Pour changer de mois appuyez sur les touches directionnelles haut ou bas.
+						Pour changer d'escouade appuyez sur gauche ou droite.
+					</p>
+					<p>
+						En haut du menu, vous verrez le nom de l'alerte sur lequel sera appliqué l'horaire en cours.
+						Pour pouvoir changer d'alerte vous devrez appuyez sur les touche <span class="touche">"*"</span> ou <span class="touche">"/"</span>.
+					</p>
+					<p>
+						Pour chaque mois, vous pouvez soit ajouter un ordre avec la touche <span class="touche">"o"</span> soit éditer un ordre avec la touche <span class="touche">"e"</span> soit encore annuler un ordre avec la touche <span class="touche">"x"</span>.
+					</p>
+					<p>
+						Comme vous l'aurez compris, un mois peut avoir plusieurs ordres.
+						Pour pouvoir naviguer entre les différents ordres, vous n'aurez qu'à appuyer sur <span class="touche">"Tab"</span> ("Tab" vous permettra de revenir à la grille horaire ensuite).
+					</p>
+					<p>
+						Quand vous appuyez sur <span class="touche">"o"</span> pour ajouter un ordre, vous pouvez choisir entre défendre un sanctuaire, patrouiller, stationner et s'entraîner.
+						Pour changer le type de l'ordre, vous n'aurez qu'à appuyer sur <span class="touche">"o"</span>.
+					</p>
+					<p>
+						Avec <span class="touche">"+"</span> ou <span class="touche">"-"</span>, vous pouvez choisir le nombre minimum de soldat qui devront effectuer l'action.
+						(attention, mettre un nombre trop élevé de soldats empêchera tous les soldats d'effectuer l'action s'il n'y a pas le nombre requis).
+					</p>
+					<p>
+						Pour approuver votre choix appuyez sur <span class="touche">"Shift+Enter"</span> et sur <span class="touche">"Esc"</span> pour annuler.
+					</p>
+					<h3 id="armee_baraquement">Baraquement</h3>
+					<p>
+						Un baraquement se créé depuis un lit, un "Armor stand" (support d'armure), ou un "Weapon rack" (râtelier d'arme).
+						Appuyez sur la touche <span class="touche">"q"</span> depuis le menu principal et approchez-vous de l'objet choisi.
+					</p>
+					<p>
+						Avec le lit, vous pourrez choisir entre dortoir et  baraquement. Vous devrez opter pour l'un ou l'autre. Ce ne pourra pas être les deux.
+					</p>
+					<p>
+						Une fois le baraquement choisi, le nom de vos escouades apparaîtront dans une liste en dessous. Pour défiler dans cette liste appuyez sur <span class="touche">"+"</span> ou <span class="touche">"-"</span>.
+					</p>
+					<p>
+						Pour chaque baraquement, vous pouvez choisir si l'escouade y dormira (appuyez sur <span class="touche">"z"</span>) ou s'il elle s'y entraînera (appuyez sur <span class="touche">"t"</span>).
+						Vous pouvez aussi choisir si le baraquement sera le lieu où on entreposera l'équipement de l'escouade (appuyez sur <span class="touche">"q"</span>) où l'équipement individuel (appuyez sur <span class="touche">"i"</span>).
+					</p>
+					<h3 id="armee_entrainement">Entraînement</h3>
+					<p>
+						Vos soldats devront s'entraîner pour être assez fort pour pouvoir repousser les attaques ennemies.
+					</p>
+					<p>
+						Nous avons appris à créer un baraquement dont nous avons bien appuyé sur <span class="touche">"t"</span> pour signifier que ce serait le lieu d'entraînement de l'escouade.
+						Mais cela ne suffit pas pour permettre aux soldats de s'entraîner.
+					</p>
+					<p class="image_centre"><a href="image/entrainement.png" target="blank"><img src="image/entrainement.png" width="150" height="150" alt="Photo d'article"></a></p>
+					<p>
+						Nous devons maintenant mettre l'escouade dans l'alerte adéquate.<br>
+						Il existe heureusement une alerte déjà créée pour l'entraînement. Choisissez l'alerte training.
+					</p>
+					<p>
+						Nous allons apprendre à la modifier un peu car comme elle est d'origine elle n'est pas très utile.
+					</p>
+					<p>
+						En effet, cette alerte demande que 10 nains minimum soient prés à s'entraîner (une escouade compte maximum 10 nains).
+						Il suffit qu'un nain ne soit pas là pour que les nains ne s'entraînent pas.
+					</p>
+					<p>
+						Nous allons donc éditer l'ordre avec <span class="touche">"e"</span> pour avoir moins de nains minimum.
+						Je conseille de mettre la moitié du nombre de nain disponibles pour être sûr d'avoir toujours des nains qui s'entraîneront.
+					</p>
+					<p>
+						Une fois cela fait pour un mois, nous allons copier les ordres du mois avec la touche <span class="touche">"c"</span> et les copier avec <span class="touche">"p"</span>.
+					</p>
+					<p>
+						Et voilà, vos nains vont aller seuls s'entraîner. Vous n'avez plus à vous en occuper.
+					</p>
+					<h3 id="armee_escouade_creation">Créer son propre type d'escouade</h3>
+					<p>
+						Le problème avec les types d'escouade par défaut c'est qu'ils ne sont pas très intéressant.<br>
+						Il nous est heureusement possible de créer nos propres types d'escouade.
+					</p>
+					<p>
+						Depuis le menu armée, appuyez sur la touche <span class="touche">"n"</span> pour accéder au menu uniforme.<br>
+						Encore une fois, nous trouvons un menu avec plusieurs colonne.<br>
+						Celle de gauche liste les différents types d'escouades possible, celle du milieu liste l'équipement que contient l'uniforme.
+						Enfin, celle de droite contient toute la liste d'équipement possible selon la catégorie choisie(les différentes catégorie possible sont listée en haut du menu).
+					</p>
+					<p>
+						Appuyez sur la touche <span class="touche">"c"</span> pour ajouter un nouvelle uniforme.Avec la touche <span class="touche">"N"</span> vous pouvez le renommer.
+					</p>
+					<p>
+						Vous pouvez remarquer que la colonne du milieu ne contient encore aucun équipement. Normal, c'est vous qui allez devoir y mettre l'équipement que vous jugerez utile.
+					</p>
+					<p>
+						Maintenant, voyons les différents catégories d'équipement. Nous avons :
+					</p>
+					<ul>
+						<li>les armure (appuyez sur <span class="touche">"A"</span>)</li>
+						<li>les jambères (appuyez sur <span class="touche">"L"</span>)</li>
+						<li>les casques (appuyez sur <span class="touche">"H"</span>)</li>
+						<li>les gantelets (appuyez sur <span class="touche">"G"</span>)</li>
+						<li>les bottes (appuyez sur <span class="touche">"B"</span>)</li>
+						<li>les boucliers (appuyez sur <span class="touche">"S"</span>)</li>
+						<li>les armes (appuyez sur <span class="touche">"W"</span>)</li>
+					</ul>
+					<p>
+						Comme vous voyez, vous aurez l'embarras du choix.
+					</p>
+					<p>
+						En plus de choisir le type d'arme, armure et autre, il vous est aussi possible de choisir la matière de l'équipement. Appuyez sur <span class="touche">"M"</span> et choisissez le type de
+						matériaux que vous voulez pour l'équipement en cours.
+						Il est aussi possible de choisir la couleur de l'équipement avec la touche <span class="touche">"C"</span>.
+					</p>
+					<p>
+						Si jamais vous vous êtes trompés lors du choix de votre équipement, il est toujours possible de supprimer cet équipement en le sélectionnant dans la colonne du milieu et en appuyant sur <span class="touche">"Enter"</span>.
+					</p>
+					<h3 id="armee_defense">Défense d'une zone précise</h3>
+					<p>
+						Vos soldats s'entraînent depuis un moment quand, soudain, une horde de gobelin vous attaquent.
+						Il est possible de demander aux soldats de défendre une zone précise, nous verront ci-dessous comment.
+					</p>
+					<p>
+						Nous allons vous enseigner comment créer un sanctuaire qui servira de zone de défense pour les soldats.
+					</p>
+					<p>
+						Appuyez sur <span class="touche">"w"</span> depuis le menu principal. Vous arrivez sur le menu des sanctuaires.
+						Avec la touche "a" vous pouvez créer un autre sanctuaire, alors que la touche <span class="touche">"d"</span> permet de supprimer le sanctuaire choisi.
+					</p>
+					<p>
+						Pour dessiner la zone du sanctuaire, appuyez sur <span class="touche">"Enter"</span>.
+						Un nouveau menu apparaît. Avec la touche <span class="touche">"n"</span>, nous pouvons renommer le sanctuaire choisi. Appelons-le par exemple "Zone de défense".
+					</p>
+					<p>
+						Nous pouvons apercevoir le curseur sur la carte. Déplacez-le vers l'endroit où vous voulez mettre l'un des coins de votre sanctuaire et appuyez sur <span class="touche">"Enter"</span>.<br>
+						Ensuite, déplacez encore votre curseur vers l'autre coin en diagonal et réappuyez sur "Enter". Voici votre premier sanctuaire créé.<br>
+						Pour revenir au menu principal, appuyez deux fois sur <span class="touche">"Esc"</span>.
+					</p>
+					<p>
+						Nous avons un sanctuaire mais cela ne suffit pas. Nous allons créer aussi notre première alerte.<br>
+						Revenez au menu des alertes et appuyez sur <span class="touche">"c"</span> pour créer une nouvelle alerte.
+					</p>
+					<p>
+						Une nouvelle alerte apparaît au nom d'"alerte state". Nous allons tout de suite la renommer avec la touche <span class="touche">"N"</span>. Appelons-là par exemple "Defense".
+					</p>
+					<p>
+						Une fois l'alerte renommée, choisissez dans la colonne du milieu quelles seront les escouades concernées par cette alerte.
+					</p>
+					<p>
+						Cela fait, il nous reste encore à bien paramétrer l'horaire pour cette alerte.
+					</p>
+					<p>
+						Entrons dans le menu horaire et choisissez bien l'alerte nouvellement créée.
+					</p>
+					<p>
+						Appuyez sur <span class="touche">"o"</span> pour l'un des mois puis choisissez le type d'ordre "Defend burrow". Là, vous aurez droit à une liste de tous les sanctuaires créés auparavant.
+						Nous aurons donc celui que nous avons paramétré tout à l'heure. Avec <span class="touche">"Enter"</span>, vous sélectionnerez le sanctuaire en surbrillance dans la liste.
+					</p>
+					<p>
+						Choisissez le nombre minimum de nain qui devront y faire leur garde et appuyez sur <span class="touche">"Shift+Enter"</span> pour approuver.
+						Voilà, il vous reste à faire de même pour les autres mois de l'année. (N'hésitez pas à copier-coller)
+					</p>
+					<p>
+						Vos nains iront automatiquement défendre la zone.
+					</p>
+					<h3 id="armee_attaque">Attaque</h3>
+					<p>
+						Nous avons appris ensemble comment défendre une zone mais nous n'avons pas encore appris à attaquer.
+					</p>
+					<p>
+						Pour cela, nous allons entrer dans le menu escouade depuis le menu principal en appuyant sur la touche <span class="touche">"s"</span>.
+					</p>
+					<p>
+						Vous pouvez soit choisir d'attaquer avec toute l'escouade en une fois soit d'attaquer avec les soldat individuellement.
+						Pour cela, appuyez sur la touche <span class="touche">"p"</span> pour choisir comment vous voulez les faire attaquer.
+					</p>
+					<p>
+						Pour choisir les escouades/soldats, vous devrez appuyez sur la touches correspondantes. Pour combattre un ennemi, vous devrez vous placez dessus avec votre curseur et appuyez sur <span class="touche">"k"</span>.
+					</p>
+					<p>
+						Attention, la défense est un ordre passif alors que l'attaque est un ordre actif. Si un soldat qui défend une zone, reçoit l'ordre d'attaquer, il abandonnera la zone pour aller tuer son ennemi.
+					</p>
+					<h3 id="armee_archer">Cas particulier : les archers</h3>
+					<p>
+						Nous pouvons aussi créer des archers pour notre armée.
+					</p>
+					<p>
+						Pour entraîner des archers, nous pouvons placer des "archery target" depuis le menu bâtiment, de cette façon-là les archers pourront s'entraîner à tirer.
+					</p>
+					<p>
+						Mais il existe une façon plus efficace d'entraîner nos archers. Il nous suffit de mettre nos archers en tant que <a href="#prof_chasse_chasseur">chasseur</a>.
+						Non seulement les archers s'entraîneront au tir à l'arc mais en plus ils seront utiles à la forteresse en ramenant de la viande.
+					</p>
+					<p>
+						Pour qu'un archer soit efficace, il faut qu'il ait le bon équipement. Il lui faut un carquois ("quiver" en anglais), des flèches ("bolt") et un arc ("bows").
+					</p>
+					<p class="lien_dessous"><a href="#content">Revenir en haut de la page</a> <a href="#armee">Revenir au début de l'article</a></p>
+				</article>
+			<!--Fin de l'article-->
+				
+			</div>
+		<!--Fin du bloc avec les articles-->
+			
+		</div>
+	<!--Fin du gros bloc avec la naviqation et les articles-->
+		
+	<!--Le pied de page-->	
+		<footer id="footer">
+			<div>
+				<p>
+					Ce site a été créé par <em>Stelio ALIFIERAKIS</em><br>
+					Bachelier en informatique réseau & systèmes, finalité réseaux & télécommunications<br>
+					Haute Ecole en Hainaut, Campus Technique
+				</p>
+			</div>
+		</footer>
+	<!--Fin du pied de page-->	
+	
+	</div>
+	</body>
+</html>
